@@ -1,0 +1,29 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
+  ],
+  "@type": "Thing",
+  "title": "Generic-56",
+  "id": "urn:test:thing:generic_56",
+  "securityDefinitions": {
+    "nosec_sc": {
+      "scheme": "nosec"
+    }
+  },
+  "security": "nosec_sc",
+  "properties": {
+    "field1": {
+      "title": "Field 1",
+      "type": "string",
+      "value": "data"
+    },
+    "field2": {
+      "title": "Field 2",
+      "type": "number",
+      "value": 1.0
+    }
+  }
+}

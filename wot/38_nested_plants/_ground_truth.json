@@ -1,0 +1,28 @@
+{
+  "scenario": "38_nested_plants",
+  "description": "Nested: Plants",
+  "file_a_expected_semids": [
+    "STATE"
+  ],
+  "file_b_expected_semids": [
+    "STATE"
+  ],
+  "shared_semids": [
+    "STATE"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "STATE": true
+  },
+  "b_to_a_expected_survivors": {
+    "STATE": true
+  },
+  "a_to_b_expected_losses": [
+    "sectionCount"
+  ],
+  "b_to_a_expected_losses": [
+    "section_count"
+  ],
+  "notes": "Nested: Plants"
+}

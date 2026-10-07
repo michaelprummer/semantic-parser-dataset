@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1"
+  ],
+  "@type": "Thing",
+  "title": "Generic-60",
+  "id": "urn:test:thing:generic_60",
+  "securityDefinitions": {
+    "nosec_sc": {
+      "scheme": "nosec"
+    }
+  },
+  "security": "nosec_sc",
+  "properties": {
+    "field1": {
+      "title": "Field 1",
+      "type": "string",
+      "value": "alpha"
+    },
+    "field2": {
+      "title": "Field 2",
+      "type": "number",
+      "value": 12.0
+    },
+    "field3": {
+      "title": "Field 3",
+      "type": "string",
+      "value": "beta"
+    },
+    "field4": {
+      "title": "Field 4",
+      "type": "number",
+      "value": 99.0
+    }
+  }
+}

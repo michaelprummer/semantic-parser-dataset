@@ -1,0 +1,44 @@
+{
+  "scenario": "aas_basic",
+  "description": "AAS (Asset Administration Shell) format with SubmodelElementCollections vs. flat JSON. Tests whether the AAS parser correctly extracts position, type, status, and speed from the nested AAS hierarchy and maps them across formats.",
+  "file_a_expected_semids": [
+    "NAME",
+    "POS",
+    "VEL",
+    "STATE",
+    "TYPE"
+  ],
+  "file_b_expected_semids": [
+    "NAME",
+    "POS",
+    "VEL",
+    "STATE",
+    "TYPE"
+  ],
+  "shared_semids": [
+    "NAME",
+    "POS",
+    "VEL",
+    "STATE",
+    "TYPE"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "VEL": true,
+    "STATE": true,
+    "TYPE": true,
+    "NAME": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "VEL": true,
+    "STATE": true,
+    "TYPE": true,
+    "NAME": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "notes": "Full overlap between AAS and simple JSON. Same 3 assets with same semantic properties. The AAS side uses nested SubmodelElementCollections with Position as a sub-collection of x/y/z Property elements."
+}

@@ -1,0 +1,38 @@
+{
+  "$anchor": "b1000001-0000-0000-0000-000000000060",
+  "$name": "60_any_tagged_generic5_b",
+  "$concept": "asset",
+  "$abstraction": "instance",
+  "assets": {
+    "Device-1": {
+      "$anchor": "b1000060-0000-0000-0000-000000000001",
+      "$name": "Device-1",
+      "$concept": "asset",
+      "$abstraction": "instance",
+      "fld1": {
+        "$anchor": "b1000060-0000-0000-0000-000000000002",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "alpha"
+      },
+      "fld2": {
+        "$anchor": "b1000060-0000-0000-0000-000000000003",
+        "$concept": "attribute",
+        "$datatype": "double",
+        "$value": "12.0"
+      },
+      "fld3": {
+        "$anchor": "b1000060-0000-0000-0000-000000000004",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "beta"
+      },
+      "fld4": {
+        "$anchor": "b1000060-0000-0000-0000-000000000005",
+        "$concept": "attribute",
+        "$datatype": "double",
+        "$value": "99.0"
+      }
+    }
+  }
+}

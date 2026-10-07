@@ -1,0 +1,29 @@
+{
+  "scenario": "partial_overlap",
+  "description": "Packaging line. A has one extra property (speed) that B lacks. Minimal difference test.",
+  "shared_semids": [
+    "POS",
+    "STATE",
+    "TYPE"
+  ],
+  "a_only_semids": [
+    "VEL"
+  ],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": false
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true
+  },
+  "a_to_b_expected_losses": [
+    "VEL"
+  ],
+  "b_to_a_expected_losses": [],
+  "notes": "Minimal partial overlap \u2014 just one extra SemID in A (speed/VEL). All assets same speed value."
+}

@@ -1,0 +1,53 @@
+{
+  "warehouse": "DistributionCenter-East",
+  "robots": [
+    {
+      "name": "PickBot-01",
+      "type": "pick_and_place",
+      "position": [
+        5.0,
+        3.0,
+        0.0
+      ],
+      "status": "picking",
+      "speed": 2.1,
+      "weight": 85.0
+    },
+    {
+      "name": "PickBot-02",
+      "type": "pick_and_place",
+      "position": [
+        8.0,
+        3.0,
+        0.0
+      ],
+      "status": "idle",
+      "speed": 0.0,
+      "weight": 85.0
+    },
+    {
+      "name": "Conveyor-Main",
+      "type": "belt_conveyor",
+      "position": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "status": "running",
+      "speed": 1.5,
+      "weight": 450.0
+    },
+    {
+      "name": "Sorter-A",
+      "type": "diverter",
+      "position": [
+        15.0,
+        0.0,
+        0.5
+      ],
+      "status": "active",
+      "speed": 3.0,
+      "weight": 120.0
+    }
+  ]
+}

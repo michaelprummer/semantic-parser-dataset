@@ -1,0 +1,41 @@
+{
+  "lab_id": "WindTunnel-Lab3",
+  "test_equipment": [
+    {
+      "designation": "PressureSensor-PS1",
+      "equipment_type": "pressure_transducer",
+      "mount_point": [
+        0.0,
+        0.0,
+        2.5
+      ],
+      "operational_status": "recording",
+      "airspeed": 0.0,
+      "thermal_reading": -40.0
+    },
+    {
+      "designation": "FlowMeter-FM1",
+      "equipment_type": "pitot_tube",
+      "mount_point": [
+        0.5,
+        0.0,
+        2.5
+      ],
+      "operational_status": "recording",
+      "airspeed": 340.0,
+      "thermal_reading": -45.0
+    },
+    {
+      "designation": "Model-X1",
+      "equipment_type": "test_article",
+      "mount_point": [
+        1.0,
+        0.0,
+        2.5
+      ],
+      "operational_status": "mounted",
+      "airspeed": 0.0,
+      "thermal_reading": -42.0
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "scenario": "full_overlap",
+  "description": "Both files describe the same robotic welding cell with identical semantic content but completely different JSON schemas and key names. All SemIDs should survive conversion in both directions.",
+  "file_a_expected_semids": [
+    "POS",
+    "SIZE",
+    "VEL",
+    "STATE",
+    "TYPE"
+  ],
+  "file_b_expected_semids": [
+    "POS",
+    "SIZE",
+    "VEL",
+    "STATE",
+    "TYPE"
+  ],
+  "shared_semids": [
+    "POS",
+    "SIZE",
+    "VEL",
+    "STATE",
+    "TYPE"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "SIZE": true,
+    "VEL": true,
+    "STATE": true,
+    "TYPE": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "SIZE": true,
+    "VEL": true,
+    "STATE": true,
+    "TYPE": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "notes": "Both schemas have matching SemIDs. Key differences: position=[x,y,z] vs coords={x,y,z}, speed vs velocity, length vs width, status vs mode, type vs category, name vs label."
+}

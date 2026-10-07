@@ -1,0 +1,81 @@
+{
+  "scenario": "units",
+  "test_case": "compound_unit",
+  "description": "Compound units: m/s, kW\u00b7h, V\u00b7A. Tests that compound forms (slash, dot) round-trip without being split or normalized.",
+  "shared_semids": [
+    "NAME",
+    "POS",
+    "POWER",
+    "PRESS",
+    "STATE",
+    "THERM",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "file_a_expected_semids": [
+    "NAME",
+    "POS",
+    "POWER",
+    "PRESS",
+    "STATE",
+    "THERM",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "file_b_expected_semids": [
+    "NAME",
+    "POS",
+    "POWER",
+    "PRESS",
+    "STATE",
+    "THERM",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "POWER": true,
+    "PRESS": true,
+    "STATE": true,
+    "THERM": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true,
+    "NAME": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "POWER": true,
+    "PRESS": true,
+    "STATE": true,
+    "THERM": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true,
+    "NAME": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "a_to_b_expected_units": {
+    "POS": "m",
+    "THERM": "\u00b0C",
+    "VEL": "m/s",
+    "WEIGHT": "kg",
+    "POWER": "kW\u00b7h",
+    "PRESS": "Pa"
+  },
+  "b_to_a_expected_units": {
+    "POS": "m",
+    "THERM": "\u00b0C",
+    "VEL": "m/s",
+    "WEIGHT": "kg",
+    "POWER": "kW\u00b7h",
+    "PRESS": "Pa"
+  },
+  "notes": "units test case: 06_units_compound_unit"
+}

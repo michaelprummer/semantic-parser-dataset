@@ -1,0 +1,53 @@
+{
+  "facility": "DistributionCenter-East",
+  "equipment": [
+    {
+      "tag": "PickBot-01",
+      "kind": "pick_and_place",
+      "location": [
+        5.0,
+        3.0,
+        0.0
+      ],
+      "mode": "picking",
+      "velocity": 2.1,
+      "mass": 85.0
+    },
+    {
+      "tag": "PickBot-02",
+      "kind": "pick_and_place",
+      "location": [
+        8.0,
+        3.0,
+        0.0
+      ],
+      "mode": "idle",
+      "velocity": 0.0,
+      "mass": 85.0
+    },
+    {
+      "tag": "Conveyor-Main",
+      "kind": "belt_conveyor",
+      "location": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "mode": "running",
+      "velocity": 1.5,
+      "mass": 450.0
+    },
+    {
+      "tag": "Sorter-A",
+      "kind": "diverter",
+      "location": [
+        15.0,
+        0.0,
+        0.5
+      ],
+      "mode": "active",
+      "velocity": 3.0,
+      "mass": 120.0
+    }
+  ]
+}

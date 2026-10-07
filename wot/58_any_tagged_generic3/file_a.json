@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
+  ],
+  "@type": "Thing",
+  "title": "Generic-58",
+  "id": "urn:test:thing:generic_58",
+  "securityDefinitions": {
+    "nosec_sc": {
+      "scheme": "nosec"
+    }
+  },
+  "security": "nosec_sc",
+  "properties": {
+    "temperature": {
+      "title": "Temperature",
+      "type": "number",
+      "unit": "om:degreeCelsius",
+      "value": 22.0
+    },
+    "speed": {
+      "title": "Speed",
+      "type": "number",
+      "unit": "om:metrePerSecond",
+      "value": 3.5
+    },
+    "field1": {
+      "title": "Field 1",
+      "type": "string",
+      "value": "data"
+    }
+  }
+}

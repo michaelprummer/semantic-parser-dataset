@@ -1,0 +1,21 @@
+{
+  "scene_name": "07_units_no_field_default",
+  "description": "No unit fields in the data. The source carries no units, so the parser must assign no unit: the catalog is a lookup table, not a default-suggester. expected_units is empty by design.",
+  "equipment": [
+    {
+      "name": "Device-1",
+      "type": "equipment",
+      "status": "active",
+      "position": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "temperature": 22.0,
+      "speed": 25,
+      "weight": 1500,
+      "power": 5000,
+      "pressure": 101325
+    }
+  ]
+}

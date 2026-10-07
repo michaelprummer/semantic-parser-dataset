@@ -1,0 +1,35 @@
+{
+  "production_line": "PackagingLine-3",
+  "modules": [
+    {
+      "module_name": "Filler-F1",
+      "module_type": "liquid_filler",
+      "coords": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "state": "running"
+    },
+    {
+      "module_name": "Capper-C1",
+      "module_type": "cap_sealer",
+      "coords": [
+        2.0,
+        0.0,
+        1.0
+      ],
+      "state": "running"
+    },
+    {
+      "module_name": "Labeler-L1",
+      "module_type": "label_applicator",
+      "coords": [
+        4.0,
+        0.0,
+        1.0
+      ],
+      "state": "running"
+    }
+  ]
+}

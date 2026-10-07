@@ -1,0 +1,94 @@
+{
+  "datacenter": "DC-Frankfurt-1",
+  "infrastructure": {
+    "name": "DC-FRA-1",
+    "type": "tier4_datacenter",
+    "status": "operational",
+    "racks": [
+      {
+        "name": "Rack-A01",
+        "type": "server_rack",
+        "position": [
+          1.0,
+          1.0,
+          0.0
+        ],
+        "temperature": 22.0,
+        "servers": [
+          {
+            "name": "Srv-A01-01",
+            "type": "compute_node",
+            "position": [
+              1.0,
+              1.0,
+              0.5
+            ],
+            "status": "running",
+            "power": 500,
+            "temperature": 45.0
+          },
+          {
+            "name": "Srv-A01-02",
+            "type": "compute_node",
+            "position": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "status": "running",
+            "power": 480,
+            "temperature": 43.0
+          },
+          {
+            "name": "Srv-A01-03",
+            "type": "storage_node",
+            "position": [
+              1.0,
+              1.0,
+              1.5
+            ],
+            "status": "idle",
+            "power": 120,
+            "temperature": 35.0
+          }
+        ]
+      },
+      {
+        "name": "Rack-B01",
+        "type": "network_rack",
+        "position": [
+          3.0,
+          1.0,
+          0.0
+        ],
+        "temperature": 20.0,
+        "servers": [
+          {
+            "name": "Switch-B01-01",
+            "type": "core_switch",
+            "position": [
+              3.0,
+              1.0,
+              0.5
+            ],
+            "status": "active",
+            "power": 350,
+            "temperature": 38.0
+          },
+          {
+            "name": "Router-B01-01",
+            "type": "border_router",
+            "position": [
+              3.0,
+              1.0,
+              1.0
+            ],
+            "status": "active",
+            "power": 200,
+            "temperature": 36.0
+          }
+        ]
+      }
+    ]
+  }
+}

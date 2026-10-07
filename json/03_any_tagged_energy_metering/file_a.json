@@ -1,0 +1,32 @@
+{
+  "metering_group": "Building-A-Meters",
+  "meters": [
+    {
+      "meter_id": "EM-001",
+      "ct_ratio": "200:5",
+      "pt_ratio": "1:1",
+      "tariff_code": "TOU-C",
+      "demand_window_min": 15,
+      "pulse_weight_kwh": 0.1,
+      "billing_period": "monthly"
+    },
+    {
+      "meter_id": "EM-002",
+      "ct_ratio": "400:5",
+      "pt_ratio": "1:1",
+      "tariff_code": "TOU-B",
+      "demand_window_min": 30,
+      "pulse_weight_kwh": 1.0,
+      "billing_period": "monthly"
+    },
+    {
+      "meter_id": "EM-003",
+      "ct_ratio": "100:5",
+      "pt_ratio": "1:1",
+      "tariff_code": "FLAT",
+      "demand_window_min": 15,
+      "pulse_weight_kwh": 0.01,
+      "billing_period": "weekly"
+    }
+  ]
+}

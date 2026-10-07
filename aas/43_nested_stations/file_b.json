@@ -1,0 +1,35 @@
+{
+  "scene_name": "43_stations",
+  "equipment": [
+    {
+      "name": "Section-0",
+      "type": "unit",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": "active"
+    },
+    {
+      "name": "Section-1",
+      "type": "unit",
+      "position": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "status": "active"
+    },
+    {
+      "name": "Section-2",
+      "type": "unit",
+      "position": [
+        2.0,
+        0.0,
+        0.0
+      ],
+      "status": "active"
+    }
+  ]
+}

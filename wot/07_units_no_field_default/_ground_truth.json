@@ -1,0 +1,62 @@
+{
+  "scenario": "units",
+  "test_case": "no_field_default",
+  "description": "No unit fields in the data. The source carries no units, so the parser must assign no unit: the catalog is a lookup table, not a default-suggester (there is no preferred/default unit). expected_units is empty by design.",
+  "shared_semids": [
+    "POS",
+    "POWER",
+    "PRESS",
+    "STATE",
+    "THERM",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "file_a_expected_semids": [
+    "POS",
+    "POWER",
+    "PRESS",
+    "STATE",
+    "THERM",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "file_b_expected_semids": [
+    "POS",
+    "POWER",
+    "PRESS",
+    "STATE",
+    "THERM",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "POWER": true,
+    "PRESS": true,
+    "STATE": true,
+    "THERM": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "POWER": true,
+    "PRESS": true,
+    "STATE": true,
+    "THERM": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "a_to_b_expected_units": {},
+  "b_to_a_expected_units": {},
+  "notes": "units test case: 07_units_no_field_default"
+}

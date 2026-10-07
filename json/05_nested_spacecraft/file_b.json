@@ -1,0 +1,87 @@
+{
+  "scene_name": "LEO-Sat-Constellation-7",
+  "elements": [
+    {
+      "name": "SAT-7A",
+      "type": "communication_satellite",
+      "status": "operational",
+      "weight": 1200,
+      "speed": 7800
+    },
+    {
+      "name": "Power-System",
+      "type": "eps",
+      "power": 5000,
+      "status": "nominal",
+      "parent": "SAT-7A"
+    },
+    {
+      "name": "SolarPanel-Port",
+      "type": "solar_array",
+      "position": [
+        0.0,
+        3.0,
+        0.0
+      ],
+      "power": 2800,
+      "temperature": 80.0,
+      "parent": "Power-System"
+    },
+    {
+      "name": "SolarPanel-Stbd",
+      "type": "solar_array",
+      "position": [
+        0.0,
+        -3.0,
+        0.0
+      ],
+      "power": 2800,
+      "temperature": 75.0,
+      "parent": "Power-System"
+    },
+    {
+      "name": "Battery-Main",
+      "type": "li_ion_battery",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "power": 1500,
+      "weight": 120,
+      "temperature": 20.0,
+      "parent": "Power-System"
+    },
+    {
+      "name": "Comms-Payload",
+      "type": "payload",
+      "power": 2000,
+      "status": "transmitting",
+      "parent": "SAT-7A"
+    },
+    {
+      "name": "Antenna-Ka",
+      "type": "ka_band_antenna",
+      "position": [
+        0.0,
+        0.0,
+        -0.5
+      ],
+      "power": 1500,
+      "temperature": 35.0,
+      "parent": "Comms-Payload"
+    },
+    {
+      "name": "Transponder-1",
+      "type": "transponder",
+      "position": [
+        0.0,
+        0.0,
+        0.2
+      ],
+      "power": 500,
+      "temperature": 40.0,
+      "parent": "Comms-Payload"
+    }
+  ]
+}

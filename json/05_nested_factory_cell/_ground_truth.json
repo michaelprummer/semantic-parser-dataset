@@ -1,0 +1,37 @@
+{
+  "scenario": "nested_hierarchy",
+  "description": "Factory cell \u2192 machines \u2192 tools. Compact 3-level hierarchy.",
+  "shared_semids": [
+    "POS",
+    "STATE",
+    "TYPE",
+    "VEL",
+    "POWER",
+    "THERM"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "POWER": true,
+    "THERM": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "POWER": true,
+    "THERM": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "expected_asset_count": {
+    "file_a": 5,
+    "file_b": 5
+  },
+  "notes": "Small tree (5 nodes) but 3 levels deep. Tools are leaf nodes with temperature."
+}

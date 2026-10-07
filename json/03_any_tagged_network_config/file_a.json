@@ -1,0 +1,29 @@
+{
+  "network_zone": "DMZ-Segment-3",
+  "hosts": [
+    {
+      "hostname": "fw-edge-01",
+      "ip_address": "10.0.3.1",
+      "subnet_mask": "255.255.255.0",
+      "vlan_id": 300,
+      "mac": "AA:BB:CC:DD:EE:01",
+      "role": "firewall"
+    },
+    {
+      "hostname": "lb-web-01",
+      "ip_address": "10.0.3.10",
+      "subnet_mask": "255.255.255.0",
+      "vlan_id": 300,
+      "mac": "AA:BB:CC:DD:EE:10",
+      "role": "load_balancer"
+    },
+    {
+      "hostname": "app-srv-01",
+      "ip_address": "10.0.3.20",
+      "subnet_mask": "255.255.255.0",
+      "vlan_id": 301,
+      "mac": "AA:BB:CC:DD:EE:20",
+      "role": "application_server"
+    }
+  ]
+}

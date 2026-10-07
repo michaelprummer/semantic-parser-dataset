@@ -1,0 +1,29 @@
+{
+  "lab": "AnalyticsLab-7",
+  "sensors": [
+    {
+      "tag": "Spectrometer-UV1",
+      "sensor_type": "uv_spectrometer",
+      "pos": [
+        1.0,
+        2.0,
+        0.8
+      ],
+      "state": "measuring",
+      "temp_c": 22.0,
+      "watt": 450
+    },
+    {
+      "tag": "Centrifuge-C3",
+      "sensor_type": "centrifuge",
+      "pos": [
+        3.0,
+        2.0,
+        0.8
+      ],
+      "state": "spinning",
+      "temp_c": 4.0,
+      "watt": 1200
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "factory": "AssemblyPlant-9",
+  "machines": [
+    {
+      "name": "CNC-Mill-01",
+      "type": "cnc_mill",
+      "position": [
+        2.0,
+        4.0,
+        0.0
+      ],
+      "status": "machining",
+      "speed": 8000,
+      "temperature": 55.0,
+      "power": 15000,
+      "weight": 4500
+    },
+    {
+      "name": "Lathe-L3",
+      "type": "cnc_lathe",
+      "position": [
+        6.0,
+        4.0,
+        0.0
+      ],
+      "status": "idle",
+      "speed": 0,
+      "temperature": 25.0,
+      "power": 0,
+      "weight": 3200
+    },
+    {
+      "name": "Robot-Weld-5",
+      "type": "welding_robot",
+      "position": [
+        10.0,
+        4.0,
+        0.0
+      ],
+      "status": "welding",
+      "speed": 1.5,
+      "temperature": 200.0,
+      "power": 25000,
+      "weight": 1200
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "scenario": "units",
+  "test_case": "mixed_systems",
+  "description": "One file mixes SI and imperial per property: m, °F, m/s, lb, kW, hPa. Tests that the parser preserves per-property unit assignment rather than treating the file as globally metric or imperial.",
+  "shared_semids": [
+    "POS",
+    "POWER",
+    "PRESS",
+    "STATE",
+    "THERM",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "file_a_expected_semids": [
+    "POS",
+    "POWER",
+    "PRESS",
+    "STATE",
+    "THERM",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "file_b_expected_semids": [
+    "POS",
+    "POWER",
+    "PRESS",
+    "STATE",
+    "THERM",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "POWER": true,
+    "PRESS": true,
+    "STATE": true,
+    "THERM": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "POWER": true,
+    "PRESS": true,
+    "STATE": true,
+    "THERM": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "a_to_b_expected_units": {
+    "POS": "m",
+    "THERM": "°F",
+    "VEL": "m/s",
+    "WEIGHT": "lb",
+    "POWER": "kW",
+    "PRESS": "hPa"
+  },
+  "b_to_a_expected_units": {
+    "POS": "m",
+    "THERM": "°F",
+    "VEL": "m/s",
+    "WEIGHT": "lb",
+    "POWER": "kW",
+    "PRESS": "hPa"
+  },
+  "notes": "units test case: 04_units_mixed_systems"
+}

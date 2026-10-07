@@ -1,0 +1,29 @@
+{
+  "scene_name": "09_units_unknown_custom",
+  "description": "One property carries a non-catalog unit (ppm). Parser must preserve the unit string even when infer_sem_id_from_unit() returns None for it. The non-catalog unit is the same in both files.",
+  "equipment": [
+    {
+      "name": "Device-1",
+      "type": "equipment",
+      "status": "active",
+      "position": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "position_unit": "m",
+      "temperature": 22.0,
+      "temperature_unit": "°C",
+      "speed": 25,
+      "speed_unit": "m/s",
+      "weight": 1500,
+      "weight_unit": "kg",
+      "power": 5000,
+      "power_unit": "W",
+      "pressure": 101325,
+      "pressure_unit": "Pa",
+      "concentration": 100,
+      "concentration_unit": "ppm"
+    }
+  ]
+}

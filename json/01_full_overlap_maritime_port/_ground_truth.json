@@ -1,0 +1,30 @@
+{
+  "scenario": "full_overlap",
+  "description": "Maritime port with ships and crane. Tests with large numeric values and domain-specific vocabulary.",
+  "shared_semids": [
+    "POS",
+    "STATE",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "notes": "Key diffs: name/asset_name, type/asset_type, position/geo_pos, status/condition, speed/velocity, weight/tonnage"
+}

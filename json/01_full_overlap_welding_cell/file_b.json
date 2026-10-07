@@ -1,0 +1,29 @@
+{
+  "workspace": "RoboticWeldingCell",
+  "equipment": [
+    {
+      "label": "WeldBot-Alpha",
+      "category": "welding_robot",
+      "coords": {"x": 2.5, "y": 1.0, "z": 0.0},
+      "mode": "active",
+      "velocity": 3.2,
+      "width": 1.8
+    },
+    {
+      "label": "WeldBot-Beta",
+      "category": "welding_robot",
+      "coords": {"x": 5.0, "y": 1.0, "z": 0.0},
+      "mode": "idle",
+      "velocity": 2.8,
+      "width": 1.8
+    },
+    {
+      "label": "PartFeeder-1",
+      "category": "conveyor",
+      "coords": {"x": 0.0, "y": 0.0, "z": 0.0},
+      "mode": "active",
+      "velocity": 1.5,
+      "width": 6.0
+    }
+  ]
+}

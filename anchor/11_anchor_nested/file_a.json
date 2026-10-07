@@ -1,0 +1,170 @@
+{
+  "$anchor": "b2000001-0000-0000-0000-000000000001",
+  "$name": "ChemicalPlant.ReactorSection",
+  "$concept": "asset",
+  "$abstraction": "instance",
+  "$metadata": {
+    "anchor": {
+      "createdOn": "2025-06-02T08:00:00Z",
+      "tenant": "000000000",
+      "tenantName": "ChemOps"
+    }
+  },
+  "assets": {
+    "Reactor-R100": {
+      "$anchor": "b2000001-0000-0000-0000-000000000010",
+      "$name": "Reactor-R100",
+      "$concept": "asset",
+      "$abstraction": "instance",
+      "Position": {
+        "$anchor": "b2000001-0000-0000-0000-000000000011",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "[0.0, 0.0, 0.0]"
+      },
+      "EquipmentType": {
+        "$anchor": "b2000001-0000-0000-0000-000000000012",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "stirred_reactor"
+      },
+      "OperatingStatus": {
+        "$anchor": "b2000001-0000-0000-0000-000000000013",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "running"
+      },
+      "Temperature": {
+        "$anchor": "b2000001-0000-0000-0000-000000000014",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 180.5,
+        "$unit": "degC"
+      },
+      "Pressure": {
+        "$anchor": "b2000001-0000-0000-0000-000000000015",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 4.2,
+        "$unit": "bar"
+      },
+      "assets": {
+        "Agitator-AG1": {
+          "$anchor": "b2000001-0000-0000-0000-000000000100",
+          "$name": "Agitator-AG1",
+          "$concept": "asset",
+          "$abstraction": "instance",
+          "EquipmentType": {
+            "$anchor": "b2000001-0000-0000-0000-000000000101",
+            "$concept": "attribute",
+            "$datatype": "string",
+            "$value": "impeller_agitator"
+          },
+          "OperatingStatus": {
+            "$anchor": "b2000001-0000-0000-0000-000000000102",
+            "$concept": "attribute",
+            "$datatype": "string",
+            "$value": "running"
+          },
+          "Speed": {
+            "$anchor": "b2000001-0000-0000-0000-000000000103",
+            "$concept": "attribute",
+            "$datatype": "float64",
+            "$value": 120.0,
+            "$unit": "rpm"
+          }
+        },
+        "TempSensor-TT1": {
+          "$anchor": "b2000001-0000-0000-0000-000000000110",
+          "$name": "TempSensor-TT1",
+          "$concept": "asset",
+          "$abstraction": "instance",
+          "EquipmentType": {
+            "$anchor": "b2000001-0000-0000-0000-000000000111",
+            "$concept": "attribute",
+            "$datatype": "string",
+            "$value": "thermocouple"
+          },
+          "OperatingStatus": {
+            "$anchor": "b2000001-0000-0000-0000-000000000112",
+            "$concept": "attribute",
+            "$datatype": "string",
+            "$value": "active"
+          },
+          "Temperature": {
+            "$anchor": "b2000001-0000-0000-0000-000000000113",
+            "$concept": "attribute",
+            "$datatype": "float64",
+            "$value": 180.2,
+            "$unit": "degC"
+          }
+        }
+      }
+    },
+    "HeatExchanger-HX200": {
+      "$anchor": "b2000001-0000-0000-0000-000000000020",
+      "$name": "HeatExchanger-HX200",
+      "$concept": "asset",
+      "$abstraction": "instance",
+      "Position": {
+        "$anchor": "b2000001-0000-0000-0000-000000000021",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "[5.0, 0.0, 0.0]"
+      },
+      "EquipmentType": {
+        "$anchor": "b2000001-0000-0000-0000-000000000022",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "shell_and_tube"
+      },
+      "OperatingStatus": {
+        "$anchor": "b2000001-0000-0000-0000-000000000023",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "active"
+      },
+      "Temperature": {
+        "$anchor": "b2000001-0000-0000-0000-000000000024",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 95.0,
+        "$unit": "degC"
+      },
+      "Pressure": {
+        "$anchor": "b2000001-0000-0000-0000-000000000025",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 2.8,
+        "$unit": "bar"
+      },
+      "assets": {
+        "CoolantPump-CP1": {
+          "$anchor": "b2000001-0000-0000-0000-000000000200",
+          "$name": "CoolantPump-CP1",
+          "$concept": "asset",
+          "$abstraction": "instance",
+          "EquipmentType": {
+            "$anchor": "b2000001-0000-0000-0000-000000000201",
+            "$concept": "attribute",
+            "$datatype": "string",
+            "$value": "coolant_pump"
+          },
+          "OperatingStatus": {
+            "$anchor": "b2000001-0000-0000-0000-000000000202",
+            "$concept": "attribute",
+            "$datatype": "string",
+            "$value": "running"
+          },
+          "FlowRate": {
+            "$anchor": "b2000001-0000-0000-0000-000000000203",
+            "$concept": "attribute",
+            "$datatype": "float64",
+            "$value": 45.0,
+            "$unit": "m3/h"
+          }
+        }
+      }
+    }
+  }
+}

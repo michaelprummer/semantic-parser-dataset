@@ -1,0 +1,41 @@
+{
+  "rack_id": "DataCenter-Rack-42",
+  "modules": [
+    {
+      "name": "Switch-Core-1",
+      "type": "network_switch",
+      "position": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "status": "active",
+      "temperature": 42.0,
+      "power": 350
+    },
+    {
+      "name": "Router-Edge-1",
+      "type": "router",
+      "position": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "status": "active",
+      "temperature": 38.0,
+      "power": 180
+    },
+    {
+      "name": "UPS-Backup",
+      "type": "ups",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": "standby",
+      "temperature": 28.0,
+      "power": 3000
+    }
+  ]
+}

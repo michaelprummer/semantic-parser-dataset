@@ -1,0 +1,29 @@
+{
+  "site": "WaterTreatmentPlant-Unit1",
+  "equipment": [
+    {
+      "label": "Pump-P101",
+      "category": "centrifugal_pump",
+      "coords": [2.5, 0.0, 1.0],
+      "state": "running",
+      "flow_m3h": 125.3,
+      "temp_celsius": 28.5
+    },
+    {
+      "label": "Valve-V201",
+      "category": "gate_valve",
+      "coords": [3.0, 1.5, 0.5],
+      "state": "open",
+      "flow_m3h": 98.7,
+      "temp_celsius": 32.1
+    },
+    {
+      "label": "Sensor-TT301",
+      "category": "temperature_sensor",
+      "coords": [4.0, 2.0, 1.5],
+      "state": "active",
+      "flow_m3h": 0.0,
+      "temp_celsius": 45.2
+    }
+  ]
+}

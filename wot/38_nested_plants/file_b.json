@@ -1,0 +1,29 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
+  ],
+  "@type": "Thing",
+  "title": "System-38",
+  "id": "urn:test:thing:plants_38_json",
+  "securityDefinitions": {
+    "nosec_sc": {
+      "scheme": "nosec"
+    }
+  },
+  "security": "nosec_sc",
+  "properties": {
+    "section_count": {
+      "title": "Sections",
+      "type": "integer",
+      "value": 3
+    },
+    "state": {
+      "title": "Status",
+      "type": "string",
+      "value": "active"
+    }
+  }
+}

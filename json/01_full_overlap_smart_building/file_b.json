@@ -1,0 +1,60 @@
+{
+  "location": "SmartOffice-Tower1",
+  "nodes": [
+    {
+      "node_id": "TempSensor-Floor3",
+      "device_class": "temperature_sensor",
+      "xyz": [
+        15.0,
+        8.0,
+        9.0
+      ],
+      "state": "active",
+      "reading": 23.5
+    },
+    {
+      "node_id": "OccSensor-Floor3",
+      "device_class": "occupancy_sensor",
+      "xyz": [
+        15.0,
+        8.0,
+        9.0
+      ],
+      "state": "triggered",
+      "reading": 24.0
+    },
+    {
+      "node_id": "LightCtrl-Floor3",
+      "device_class": "lighting_controller",
+      "xyz": [
+        15.0,
+        8.0,
+        9.5
+      ],
+      "state": "dimmed",
+      "reading": 30.0
+    },
+    {
+      "node_id": "HVAC-Zone3A",
+      "device_class": "thermostat",
+      "xyz": [
+        15.0,
+        8.0,
+        9.0
+      ],
+      "state": "cooling",
+      "reading": 22.0
+    },
+    {
+      "node_id": "AirQuality-3B",
+      "device_class": "co2_sensor",
+      "xyz": [
+        15.0,
+        12.0,
+        9.0
+      ],
+      "state": "normal",
+      "reading": 23.0
+    }
+  ]
+}

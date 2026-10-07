@@ -1,0 +1,68 @@
+{
+  "$anchor": "a1000001-0000-0000-0000-000000000001",
+  "$name": "03_units_mismatch_pair",
+  "$concept": "asset",
+  "$abstraction": "instance",
+  "assets": {
+    "Device-1": {
+      "$anchor": "a1000001-0000-0000-0000-000000000010",
+      "$name": "Device-1",
+      "$concept": "asset",
+      "$abstraction": "instance",
+      "EquipmentType": {
+        "$anchor": "a1000001-0000-0000-0000-000000000001",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "equipment"
+      },
+      "OperatingStatus": {
+        "$anchor": "a1000001-0000-0000-0000-000000000002",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "active"
+      },
+      "Position": {
+        "$anchor": "a1000001-0000-0000-0000-000000000003",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "[3.2808, 6.5617, 9.8425]",
+        "$unit": "ft"
+      },
+      "Temperature": {
+        "$anchor": "a1000001-0000-0000-0000-000000000004",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 71.6,
+        "$unit": "°F"
+      },
+      "Speed": {
+        "$anchor": "a1000001-0000-0000-0000-000000000005",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 82.021,
+        "$unit": "ft/s"
+      },
+      "Weight": {
+        "$anchor": "a1000001-0000-0000-0000-000000000006",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 3306.93,
+        "$unit": "lb"
+      },
+      "Power": {
+        "$anchor": "a1000001-0000-0000-0000-000000000007",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 5.0,
+        "$unit": "kW"
+      },
+      "Pressure": {
+        "$anchor": "a1000001-0000-0000-0000-000000000008",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 14.696,
+        "$unit": "lbf/in²"
+      }
+    }
+  }
+}

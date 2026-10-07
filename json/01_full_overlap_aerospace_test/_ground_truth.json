@@ -1,0 +1,30 @@
+{
+  "scenario": "full_overlap",
+  "description": "Aerospace wind tunnel lab. Tests negative temperature values and zero-speed scenarios.",
+  "shared_semids": [
+    "POS",
+    "STATE",
+    "TYPE",
+    "VEL",
+    "THERM"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "THERM": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "THERM": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "notes": "Negative temps, zero speeds. Key diffs: name/designation, type/equipment_type, position/mount_point, status/operational_status, speed/airspeed, temperature/thermal_reading"
+}

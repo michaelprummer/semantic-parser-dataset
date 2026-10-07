@@ -1,0 +1,35 @@
+{
+  "scenario": "partial_overlap",
+  "description": "Fleet management (A) vs dispatch view (B). A has weight and temperature, B only has GPS and speed.",
+  "shared_semids": [
+    "POS",
+    "STATE",
+    "TYPE",
+    "VEL"
+  ],
+  "a_only_semids": [
+    "WEIGHT",
+    "THERM"
+  ],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": false,
+    "THERM": false
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true
+  },
+  "a_to_b_expected_losses": [
+    "WEIGHT",
+    "THERM"
+  ],
+  "b_to_a_expected_losses": [],
+  "notes": "Real GPS coordinates (NYC). B lacks weight/temperature tracking."
+}

@@ -1,0 +1,44 @@
+{
+  "scenario": "aas_nested",
+  "description": "Deep AAS hierarchy (Stations → Tools → SubmodelElementCollections) vs. nested JSON with stations[].tools[]. Tests whether the AAS parser handles multi-level SubmodelElementCollection nesting and whether the converter preserves the tree structure across formats.",
+  "file_a_expected_semids": [
+    "NAME",
+    "POS",
+    "TYPE",
+    "CURR",
+    "FORCE"
+  ],
+  "file_b_expected_semids": [
+    "NAME",
+    "POS",
+    "TYPE",
+    "CURR",
+    "FORCE"
+  ],
+  "shared_semids": [
+    "NAME",
+    "POS",
+    "TYPE",
+    "CURR",
+    "FORCE"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "TYPE": true,
+    "NAME": true,
+    "CURR": true,
+    "FORCE": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "TYPE": true,
+    "NAME": true,
+    "CURR": true,
+    "FORCE": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "notes": "Deeply nested AAS hierarchy with 2 stations, each containing nested tools. Total 5 assets (2 stations + 3 tools). The AAS side stores tools as nested SubmodelElementCollections inside a parent 'Tools' collection. Tests recursive asset tree handling on both sides."
+}

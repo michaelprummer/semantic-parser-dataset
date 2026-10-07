@@ -1,0 +1,33 @@
+{
+  "laboratory": "AnalyticsLab-7",
+  "instruments": [
+    {
+      "name": "Spectrometer-UV1",
+      "type": "uv_spectrometer",
+      "position": [
+        1.0,
+        2.0,
+        0.8
+      ],
+      "status": "measuring",
+      "temperature": 22.0,
+      "power": 450,
+      "weight": 35.0,
+      "frequency": 500
+    },
+    {
+      "name": "Centrifuge-C3",
+      "type": "centrifuge",
+      "position": [
+        3.0,
+        2.0,
+        0.8
+      ],
+      "status": "spinning",
+      "temperature": 4.0,
+      "power": 1200,
+      "weight": 65.0,
+      "frequency": 15000
+    }
+  ]
+}

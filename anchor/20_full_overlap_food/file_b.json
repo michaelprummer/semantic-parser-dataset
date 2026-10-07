@@ -1,0 +1,16 @@
+{
+  "scene_name": "20_food",
+  "equipment": [
+    {
+      "name": "Device-1",
+      "type": "equipment",
+      "position": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "status": "active",
+      "speed": 2.5
+    }
+  ]
+}

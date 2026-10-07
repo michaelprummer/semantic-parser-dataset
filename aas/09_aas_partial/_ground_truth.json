@@ -1,0 +1,30 @@
+{
+  "scenario": "aas_partial",
+  "description": "AAS format with rich semantic content (temperature readings, units, semanticId references) vs. a minimal JSON that only stores position and status. Tests partial overlap: AAS has THERM and UNIT that the simple format cannot represent. The converter should preserve POS and STATE but correctly report THERM as lost.",
+  "file_a_expected_semids": [
+    "POS",
+    "THERM",
+    "STATE"
+  ],
+  "file_b_expected_semids": [
+    "POS",
+    "STATE"
+  ],
+  "shared_semids": [
+    "POS",
+    "STATE"
+  ],
+  "a_only_semids": ["THERM"],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "STATE": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "STATE": true
+  },
+  "a_to_b_expected_losses": ["THERM"],
+  "b_to_a_expected_losses": [],
+  "notes": "Partial overlap test with AAS format. The AAS side has temperature readings (THERM) and unit metadata that the simple format lacks. Position and status should survive both directions. Temperature is expected to be lost A→B because file_b has no temperature field."
+}

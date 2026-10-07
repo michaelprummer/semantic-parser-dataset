@@ -1,0 +1,44 @@
+{
+  "fleet_name": "DeliveryFleet-NYC",
+  "vehicles": [
+    {
+      "name": "Van-101",
+      "type": "delivery_van",
+      "position": [
+        40.7128,
+        -74.006,
+        0.0
+      ],
+      "status": "en_route",
+      "speed": 45.0,
+      "weight": 3500,
+      "temperature": 5.0
+    },
+    {
+      "name": "Van-102",
+      "type": "delivery_van",
+      "position": [
+        40.758,
+        -73.985,
+        0.0
+      ],
+      "status": "delivering",
+      "speed": 0.0,
+      "weight": 3500,
+      "temperature": 4.0
+    },
+    {
+      "name": "Truck-201",
+      "type": "refrigerated_truck",
+      "position": [
+        40.6892,
+        -74.044,
+        0.0
+      ],
+      "status": "loading",
+      "speed": 0.0,
+      "weight": 12000,
+      "temperature": -18.0
+    }
+  ]
+}

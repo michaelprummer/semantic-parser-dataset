@@ -1,0 +1,27 @@
+{
+  "scenario": "full_overlap",
+  "description": "Smart building with 5 IoT sensors/controllers. Tests larger asset count and shared coordinates.",
+  "shared_semids": [
+    "POS",
+    "STATE",
+    "TYPE",
+    "THERM"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "THERM": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "THERM": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "notes": "5 assets, some share positions. Key diffs: name/node_id, type/device_class, position/xyz, status/state, temperature/reading"
+}

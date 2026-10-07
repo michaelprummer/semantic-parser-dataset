@@ -1,0 +1,21 @@
+{
+  "production_batch": "Batch-2024-0547",
+  "units": [
+    {
+      "unit_tag": "R-101",
+      "recipe_id": "RX-445A",
+      "phase": "reaction",
+      "target_value": 185.5,
+      "error_margin": 0.3,
+      "tracking_code": "L20240547-01"
+    },
+    {
+      "unit_tag": "R-102",
+      "recipe_id": "RX-445A",
+      "phase": "cooling",
+      "target_value": 45.0,
+      "error_margin": -1.2,
+      "tracking_code": "L20240547-02"
+    }
+  ]
+}

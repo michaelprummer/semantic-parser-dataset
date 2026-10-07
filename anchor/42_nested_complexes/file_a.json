@@ -1,0 +1,80 @@
+{
+  "$anchor": "a1000001-0000-0000-0000-000000000001",
+  "$name": "42_complexes",
+  "$concept": "asset",
+  "$abstraction": "instance",
+  "assets": {
+    "Section-0": {
+      "$anchor": "a1000001-0000-0000-0000-0000000000000042",
+      "$name": "Section-0",
+      "$concept": "asset",
+      "$abstraction": "instance",
+      "EquipmentType": {
+        "$anchor": "a10000042-0000-0000-0000-000000000002",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "unit"
+      },
+      "Position": {
+        "$anchor": "a10000042-0000-0000-0000-000000000003",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "[0.0, 0.0, 0.0]"
+      },
+      "OperatingStatus": {
+        "$anchor": "a10000042-0000-0000-0000-000000000004",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "active"
+      }
+    },
+    "Section-1": {
+      "$anchor": "a1000001-0000-0000-0000-0000000000000043",
+      "$name": "Section-1",
+      "$concept": "asset",
+      "$abstraction": "instance",
+      "EquipmentType": {
+        "$anchor": "a10000043-0000-0000-0000-000000000002",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "unit"
+      },
+      "Position": {
+        "$anchor": "a10000043-0000-0000-0000-000000000003",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "[1.0, 0.0, 0.0]"
+      },
+      "OperatingStatus": {
+        "$anchor": "a10000043-0000-0000-0000-000000000004",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "active"
+      }
+    },
+    "Section-2": {
+      "$anchor": "a1000001-0000-0000-0000-0000000000000044",
+      "$name": "Section-2",
+      "$concept": "asset",
+      "$abstraction": "instance",
+      "EquipmentType": {
+        "$anchor": "a10000044-0000-0000-0000-000000000002",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "unit"
+      },
+      "Position": {
+        "$anchor": "a10000044-0000-0000-0000-000000000003",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "[2.0, 0.0, 0.0]"
+      },
+      "OperatingStatus": {
+        "$anchor": "a10000044-0000-0000-0000-000000000004",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "active"
+      }
+    }
+  }
+}

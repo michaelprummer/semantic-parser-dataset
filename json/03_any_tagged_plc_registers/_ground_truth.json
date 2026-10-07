@@ -1,0 +1,12 @@
+{
+  "scenario": "any_tagged",
+  "description": "PLC data block configuration. Memory addresses, data types, symbols \u2014 purely control system metadata.",
+  "shared_semids": [],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {},
+  "b_to_a_expected_survivors": {},
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "notes": "PLC programming domain. DB numbers, offsets, data types, initial values. Mixed types (int, float, bool, string)."
+}

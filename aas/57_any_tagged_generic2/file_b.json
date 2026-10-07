@@ -1,0 +1,51 @@
+{
+  "assetAdministrationShells": [
+    {
+      "id": "urn:test:57_any_tagged_generic2_b",
+      "idShort": "X57_any_tagged_generic2_b",
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:test:57_any_tagged_generic2_b:submodel"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "urn:test:57_any_tagged_generic2_b"
+      }
+    }
+  ],
+  "submodels": [
+    {
+      "id": "urn:test:57_any_tagged_generic2_b:submodel",
+      "idShort": "Assets",
+      "submodelElements": [
+        {
+          "idShort": "Device-1",
+          "modelType": "SubmodelElementCollection",
+          "value": [
+            {
+              "idShort": "Temperature",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "22.0"
+            },
+            {
+              "idShort": "fld1",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "data"
+            }
+          ]
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ]
+}

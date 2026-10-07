@@ -1,0 +1,38 @@
+{
+  "scenario": "partial_overlap",
+  "description": "Hospital wing \u2014 full BMS view (A) vs simple floor plan (B). B only has name, type, position, status.",
+  "shared_semids": [
+    "POS",
+    "STATE",
+    "TYPE"
+  ],
+  "a_only_semids": [
+    "THERM",
+    "POWER",
+    "WEIGHT",
+    "VEL"
+  ],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "THERM": false,
+    "POWER": false,
+    "WEIGHT": false,
+    "VEL": false
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true
+  },
+  "a_to_b_expected_losses": [
+    "THERM",
+    "POWER",
+    "WEIGHT",
+    "VEL"
+  ],
+  "b_to_a_expected_losses": [],
+  "notes": "Healthcare domain. B is a simplified floor plan \u2014 no environmental or power data."
+}

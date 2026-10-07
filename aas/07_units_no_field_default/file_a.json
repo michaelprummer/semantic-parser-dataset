@@ -1,0 +1,87 @@
+{
+  "assetAdministrationShells": [
+    {
+      "id": "urn:test:07_units_no_field_default",
+      "idShort": "X07_units_no_field_default",
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:test:07_units_no_field_default:submodel"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "urn:test:07_units_no_field_default"
+      }
+    }
+  ],
+  "submodels": [
+    {
+      "id": "urn:test:07_units_no_field_default:submodel",
+      "idShort": "Assets",
+      "submodelElements": [
+        {
+          "idShort": "Device-1",
+          "modelType": "SubmodelElementCollection",
+          "value": [
+            {
+              "idShort": "Type",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "equipment"
+            },
+            {
+              "idShort": "Status",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "active"
+            },
+            {
+              "idShort": "Position",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "[1.0, 2.0, 3.0]"
+            },
+            {
+              "idShort": "Temperature",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "22.0"
+            },
+            {
+              "idShort": "Speed",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "25"
+            },
+            {
+              "idShort": "Weight",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "1500"
+            },
+            {
+              "idShort": "Power",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "5000"
+            },
+            {
+              "idShort": "Pressure",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "101325"
+            }
+          ]
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ]
+}

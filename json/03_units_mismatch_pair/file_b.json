@@ -1,0 +1,27 @@
+{
+  "scene_name": "03_units_mismatch_pair",
+  "description": "file_a uses SI, file_b uses imperial. Same six properties, same property names; only the unit system and the numeric values change. Tests that the parser preserves per-file unit assignment rather than assuming a single global system.",
+  "equipment": [
+    {
+      "name": "Device-1",
+      "type": "equipment",
+      "status": "active",
+      "position": [
+        3.2808,
+        6.5617,
+        9.8425
+      ],
+      "position_unit": "ft",
+      "temperature": 71.6,
+      "temperature_unit": "°F",
+      "speed": 82.021,
+      "speed_unit": "ft/s",
+      "weight": 3306.93,
+      "weight_unit": "lb",
+      "power": 5.0,
+      "power_unit": "kW",
+      "pressure": 14.696,
+      "pressure_unit": "lbf/in²"
+    }
+  ]
+}

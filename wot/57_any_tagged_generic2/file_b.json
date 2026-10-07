@@ -1,0 +1,30 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
+  ],
+  "@type": "Thing",
+  "title": "Generic-57",
+  "id": "urn:test:thing:generic_57_json",
+  "securityDefinitions": {
+    "nosec_sc": {
+      "scheme": "nosec"
+    }
+  },
+  "security": "nosec_sc",
+  "properties": {
+    "temperature": {
+      "title": "Temperature",
+      "type": "number",
+      "unit": "om:degreeCelsius",
+      "value": 22.0
+    },
+    "fld1": {
+      "title": "Field 1",
+      "type": "string",
+      "value": "data"
+    }
+  }
+}

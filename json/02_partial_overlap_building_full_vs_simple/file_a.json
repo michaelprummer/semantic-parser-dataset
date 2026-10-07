@@ -1,0 +1,47 @@
+{
+  "building": "Hospital-Wing-A",
+  "rooms": [
+    {
+      "name": "OR-Suite-1",
+      "type": "operating_room",
+      "position": [
+        20.0,
+        15.0,
+        6.0
+      ],
+      "status": "in_use",
+      "temperature": 19.0,
+      "power": 25000,
+      "weight": 0,
+      "speed": 0
+    },
+    {
+      "name": "ICU-Bed-3",
+      "type": "icu_station",
+      "position": [
+        30.0,
+        15.0,
+        6.0
+      ],
+      "status": "occupied",
+      "temperature": 22.0,
+      "power": 5000,
+      "weight": 0,
+      "speed": 0
+    },
+    {
+      "name": "MRI-Scanner-1",
+      "type": "mri_machine",
+      "position": [
+        10.0,
+        20.0,
+        3.0
+      ],
+      "status": "scanning",
+      "temperature": 18.0,
+      "power": 150000,
+      "weight": 6000,
+      "speed": 0
+    }
+  ]
+}

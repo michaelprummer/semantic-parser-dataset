@@ -1,0 +1,37 @@
+{
+  "plc": "PLC-01",
+  "registers": [
+    {
+      "block": "DB100",
+      "address": 0,
+      "type": "REAL",
+      "tag_name": "Motor_Speed_SP",
+      "default": 1500.0,
+      "description": "Speed setpoint for main drive"
+    },
+    {
+      "block": "DB100",
+      "address": 4,
+      "type": "BOOL",
+      "tag_name": "Motor_Run_Cmd",
+      "default": false,
+      "description": "Run command from HMI"
+    },
+    {
+      "block": "DB101",
+      "address": 0,
+      "type": "INT",
+      "tag_name": "Batch_Counter",
+      "default": 0,
+      "description": "Total batches produced"
+    },
+    {
+      "block": "DB101",
+      "address": 2,
+      "type": "REAL",
+      "tag_name": "Tank_Level_PV",
+      "default": 0.0,
+      "description": "Tank level process value"
+    }
+  ]
+}

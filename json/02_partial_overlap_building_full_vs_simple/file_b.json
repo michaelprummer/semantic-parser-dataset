@@ -1,0 +1,35 @@
+{
+  "wing": "Hospital-Wing-A",
+  "zones": [
+    {
+      "zone_name": "OR-Suite-1",
+      "zone_type": "operating_room",
+      "coords": [
+        20.0,
+        15.0,
+        6.0
+      ],
+      "current_state": "in_use"
+    },
+    {
+      "zone_name": "ICU-Bed-3",
+      "zone_type": "icu_station",
+      "coords": [
+        30.0,
+        15.0,
+        6.0
+      ],
+      "current_state": "occupied"
+    },
+    {
+      "zone_name": "MRI-Scanner-1",
+      "zone_type": "mri_machine",
+      "coords": [
+        10.0,
+        20.0,
+        3.0
+      ],
+      "current_state": "scanning"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "scene_name": "Office-Tower-5",
+  "elements": [
+    {
+      "name": "Tower-5",
+      "type": "high_rise",
+      "status": "operational",
+      "weight": 500000
+    },
+    {
+      "name": "Floor-1",
+      "type": "ground_floor",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "weight": 80000,
+      "parent": "Tower-5"
+    },
+    {
+      "name": "Lobby",
+      "type": "entrance",
+      "position": [
+        10.0,
+        10.0,
+        0.0
+      ],
+      "status": "open",
+      "temperature": 22.0,
+      "parent": "Floor-1"
+    },
+    {
+      "name": "Security",
+      "type": "checkpoint",
+      "position": [
+        5.0,
+        5.0,
+        0.0
+      ],
+      "status": "manned",
+      "temperature": 21.0,
+      "parent": "Floor-1"
+    },
+    {
+      "name": "Floor-2",
+      "type": "office_floor",
+      "position": [
+        0.0,
+        0.0,
+        4.0
+      ],
+      "weight": 75000,
+      "parent": "Tower-5"
+    },
+    {
+      "name": "OpenPlan-2A",
+      "type": "workspace",
+      "position": [
+        10.0,
+        10.0,
+        4.0
+      ],
+      "status": "occupied",
+      "temperature": 23.0,
+      "parent": "Floor-2"
+    },
+    {
+      "name": "Meeting-2B",
+      "type": "conference",
+      "position": [
+        20.0,
+        10.0,
+        4.0
+      ],
+      "status": "available",
+      "temperature": 22.5,
+      "parent": "Floor-2"
+    }
+  ]
+}

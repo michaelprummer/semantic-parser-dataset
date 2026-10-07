@@ -1,0 +1,62 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
+  ],
+  "@type": "Thing",
+  "title": "10_units_alias_lookup",
+  "id": "urn:test:thing:10_units_alias_lookup_a",
+  "securityDefinitions": {
+    "nosec_sc": {
+      "scheme": "nosec"
+    }
+  },
+  "security": "nosec_sc",
+  "properties": {
+    "position": {
+      "title": "Position",
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "unit": "metre",
+      "value": [
+        1.0,
+        2.0,
+        3.0
+      ]
+    },
+    "temperature": {
+      "title": "Temperature",
+      "type": "number",
+      "unit": "DEG_C",
+      "value": 22.0
+    },
+    "speed": {
+      "title": "Speed",
+      "type": "number",
+      "unit": "metrePerSecond-Time",
+      "value": 25
+    },
+    "weight": {
+      "title": "Weight",
+      "type": "number",
+      "unit": "kilogram",
+      "value": 1500
+    },
+    "power": {
+      "title": "Power",
+      "type": "number",
+      "unit": "watt",
+      "value": 5000
+    },
+    "pressure": {
+      "title": "Pressure",
+      "type": "number",
+      "unit": "pascal",
+      "value": 101325
+    }
+  }
+}

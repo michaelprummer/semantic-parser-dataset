@@ -1,0 +1,53 @@
+{
+  "plant": "WaterTreatment-Central",
+  "equipment": [
+    {
+      "name": "Pump-Intake-1",
+      "type": "submersible_pump",
+      "position": [
+        0.0,
+        0.0,
+        -5.0
+      ],
+      "status": "running",
+      "speed": 1750,
+      "power": 22000
+    },
+    {
+      "name": "Filter-Sand-1",
+      "type": "rapid_sand_filter",
+      "position": [
+        10.0,
+        0.0,
+        0.0
+      ],
+      "status": "filtering",
+      "speed": 0,
+      "power": 500
+    },
+    {
+      "name": "UV-Disinfect-1",
+      "type": "uv_reactor",
+      "position": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "status": "active",
+      "speed": 0,
+      "power": 8000
+    },
+    {
+      "name": "Pump-Distribution",
+      "type": "booster_pump",
+      "position": [
+        30.0,
+        0.0,
+        0.0
+      ],
+      "status": "running",
+      "speed": 2900,
+      "power": 45000
+    }
+  ]
+}

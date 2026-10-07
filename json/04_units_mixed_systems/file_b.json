@@ -1,0 +1,27 @@
+{
+  "scene_name": "04_units_mixed_systems",
+  "description": "One file mixes SI and imperial per property: m, °F, m/s, lb, kW, hPa. Tests that the parser preserves per-property unit assignment rather than treating the file as globally metric or imperial.",
+  "equipment": [
+    {
+      "name": "Device-1",
+      "type": "equipment",
+      "status": "active",
+      "position": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "position_unit": "m",
+      "temperature": 22.0,
+      "temperature_unit": "°F",
+      "speed": 25,
+      "speed_unit": "m/s",
+      "weight": 1500,
+      "weight_unit": "lb",
+      "power": 5000,
+      "power_unit": "kW",
+      "pressure": 101325,
+      "pressure_unit": "hPa"
+    }
+  ]
+}

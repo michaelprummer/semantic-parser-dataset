@@ -1,0 +1,60 @@
+{
+  "scenario": "partial_overlap",
+  "description": "File A is a rich chemical plant model with 10 distinct SemIDs. File B is a simplified schema with only 4 SemIDs (POS, STATE, TYPE, NAME). A\u2192B should lose properties that B cannot represent. B\u2192A should lose nothing since A supports all of B's SemIDs.",
+  "file_a_expected_semids": [
+    "POS",
+    "SIZE",
+    "VEL",
+    "STATE",
+    "TYPE",
+    "WEIGHT",
+    "THERM",
+    "FREQ",
+    "POWER"
+  ],
+  "file_b_expected_semids": [
+    "POS",
+    "STATE",
+    "TYPE"
+  ],
+  "shared_semids": [
+    "POS",
+    "STATE",
+    "TYPE"
+  ],
+  "a_only_semids": [
+    "SIZE",
+    "VEL",
+    "WEIGHT",
+    "THERM",
+    "FREQ",
+    "POWER"
+  ],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "SIZE": false,
+    "VEL": false,
+    "WEIGHT": false,
+    "THERM": false,
+    "FREQ": false,
+    "POWER": false
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true
+  },
+  "a_to_b_expected_losses": [
+    "SIZE",
+    "VEL",
+    "WEIGHT",
+    "THERM",
+    "FREQ",
+    "POWER"
+  ],
+  "b_to_a_expected_losses": [],
+  "notes": "Tests asymmetric conversion. File A has far more semantic richness than B can accommodate. The converter should correctly identify that B lacks target mappings for weight, temperature, frequency, power, size, velocity."
+}

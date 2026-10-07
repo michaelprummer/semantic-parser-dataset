@@ -1,0 +1,35 @@
+{
+  "grid_name": "SubStation-Delta",
+  "transformers": [
+    {
+      "name": "Xfmr-T1",
+      "type": "power_transformer",
+      "position": [
+        5.0,
+        0.0,
+        3.0
+      ],
+      "status": "energized",
+      "power": 50000,
+      "temperature": 65.0,
+      "weight": 12000,
+      "frequency": 60,
+      "speed": 0
+    },
+    {
+      "name": "Breaker-CB1",
+      "type": "circuit_breaker",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "status": "closed",
+      "power": 0,
+      "temperature": 35.0,
+      "weight": 800,
+      "frequency": 60,
+      "speed": 0
+    }
+  ]
+}

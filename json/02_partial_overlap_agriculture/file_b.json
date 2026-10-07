@@ -1,0 +1,41 @@
+{
+  "field": "GreenField-Organic",
+  "machines": [
+    {
+      "machine_name": "Tractor-JD8R",
+      "machine_type": "tractor",
+      "gps_pos": [
+        500.0,
+        300.0,
+        0.0
+      ],
+      "activity": "plowing",
+      "velocity": 8.0,
+      "mass_kg": 12500
+    },
+    {
+      "machine_name": "Sprayer-S1",
+      "machine_type": "crop_sprayer",
+      "gps_pos": [
+        600.0,
+        250.0,
+        0.0
+      ],
+      "activity": "idle",
+      "velocity": 0.0,
+      "mass_kg": 5000
+    },
+    {
+      "machine_name": "Harvester-H1",
+      "machine_type": "combine_harvester",
+      "gps_pos": [
+        400.0,
+        400.0,
+        0.0
+      ],
+      "activity": "harvesting",
+      "velocity": 5.0,
+      "mass_kg": 20000
+    }
+  ]
+}

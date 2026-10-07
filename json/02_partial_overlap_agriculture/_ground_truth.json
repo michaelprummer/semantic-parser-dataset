@@ -1,0 +1,41 @@
+{
+  "scenario": "partial_overlap",
+  "description": "Agriculture \u2014 A has full telemetry, B has position/speed/weight only (no power/temp/frequency).",
+  "shared_semids": [
+    "POS",
+    "STATE",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "a_only_semids": [
+    "POWER",
+    "THERM",
+    "FREQ"
+  ],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true,
+    "POWER": false,
+    "THERM": false,
+    "FREQ": false
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true
+  },
+  "a_to_b_expected_losses": [
+    "POWER",
+    "THERM",
+    "FREQ"
+  ],
+  "b_to_a_expected_losses": [],
+  "notes": "Large field coordinates. B lacks engine telemetry (power, temperature, RPM)."
+}

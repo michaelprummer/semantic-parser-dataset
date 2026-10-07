@@ -1,0 +1,37 @@
+{
+  "controller": "PLC-01",
+  "data_blocks": [
+    {
+      "db_number": "DB100",
+      "offset": 0,
+      "data_type": "REAL",
+      "symbol": "Motor_Speed_SP",
+      "initial_value": 1500.0,
+      "comment": "Speed setpoint for main drive"
+    },
+    {
+      "db_number": "DB100",
+      "offset": 4,
+      "data_type": "BOOL",
+      "symbol": "Motor_Run_Cmd",
+      "initial_value": false,
+      "comment": "Run command from HMI"
+    },
+    {
+      "db_number": "DB101",
+      "offset": 0,
+      "data_type": "INT",
+      "symbol": "Batch_Counter",
+      "initial_value": 0,
+      "comment": "Total batches produced"
+    },
+    {
+      "db_number": "DB101",
+      "offset": 2,
+      "data_type": "REAL",
+      "symbol": "Tank_Level_PV",
+      "initial_value": 0.0,
+      "comment": "Tank level process value"
+    }
+  ]
+}

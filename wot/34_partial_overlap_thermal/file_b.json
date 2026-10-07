@@ -1,0 +1,43 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
+  ],
+  "@type": "Thing",
+  "title": "Device-34",
+  "id": "urn:test:thing:thermal_34_json",
+  "securityDefinitions": {
+    "nosec_sc": {
+      "scheme": "nosec"
+    }
+  },
+  "security": "nosec_sc",
+  "properties": {
+    "device_type": {
+      "title": "Type",
+      "type": "string",
+      "value": "equipment"
+    },
+    "coords": {
+      "title": "Position",
+      "type": "array",
+      "value": [
+        1.0,
+        2.0,
+        3.0
+      ]
+    },
+    "state": {
+      "title": "Status",
+      "type": "string",
+      "value": "active"
+    },
+    "velocity": {
+      "title": "Speed",
+      "type": "number",
+      "value": 2.5
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "zone": "ParkingGarage-Level2",
+  "spots": [
+    {
+      "name": "Spot-A1",
+      "type": "standard",
+      "status": "occupied"
+    },
+    {
+      "name": "Spot-A2",
+      "type": "ev_charging",
+      "status": "available"
+    },
+    {
+      "name": "Spot-B1",
+      "type": "handicap",
+      "status": "occupied"
+    }
+  ]
+}

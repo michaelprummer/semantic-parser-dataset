@@ -1,0 +1,62 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
+  ],
+  "@type": "Thing",
+  "title": "03_units_mismatch_pair",
+  "id": "urn:test:thing:03_units_mismatch_pair_a",
+  "securityDefinitions": {
+    "nosec_sc": {
+      "scheme": "nosec"
+    }
+  },
+  "security": "nosec_sc",
+  "properties": {
+    "position": {
+      "title": "Position",
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "unit": "m",
+      "value": [
+        1.0,
+        2.0,
+        3.0
+      ]
+    },
+    "temperature": {
+      "title": "Temperature",
+      "type": "number",
+      "unit": "°C",
+      "value": 22.0
+    },
+    "speed": {
+      "title": "Speed",
+      "type": "number",
+      "unit": "m/s",
+      "value": 25
+    },
+    "weight": {
+      "title": "Weight",
+      "type": "number",
+      "unit": "kg",
+      "value": 1500
+    },
+    "power": {
+      "title": "Power",
+      "type": "number",
+      "unit": "W",
+      "value": 5000
+    },
+    "pressure": {
+      "title": "Pressure",
+      "type": "number",
+      "unit": "Pa",
+      "value": 101325
+    }
+  }
+}

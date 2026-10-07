@@ -1,0 +1,30 @@
+{
+  "scenario": "full_overlap",
+  "description": "Water treatment plant with 4 units in processing sequence. Includes negative position (underground pump).",
+  "shared_semids": [
+    "POS",
+    "STATE",
+    "TYPE",
+    "VEL",
+    "POWER"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "POWER": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "POWER": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "notes": "Key diffs: name/unit_name, type/unit_type, position/loc, status/run_state, speed/rpm, power/wattage"
+}

@@ -1,0 +1,44 @@
+{
+  "building": "OfficeComplex-B7",
+  "units": [
+    {
+      "name": "AHU-1",
+      "type": "air_handler",
+      "position": [
+        0.0,
+        0.0,
+        12.0
+      ],
+      "status": "cooling",
+      "temperature": 18.5,
+      "power": 15000,
+      "speed": 1200
+    },
+    {
+      "name": "Chiller-1",
+      "type": "chiller",
+      "position": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "status": "running",
+      "temperature": 7.0,
+      "power": 85000,
+      "speed": 0
+    },
+    {
+      "name": "VAV-201",
+      "type": "vav_box",
+      "position": [
+        5.0,
+        10.0,
+        3.0
+      ],
+      "status": "modulating",
+      "temperature": 22.0,
+      "power": 200,
+      "speed": 800
+    }
+  ]
+}

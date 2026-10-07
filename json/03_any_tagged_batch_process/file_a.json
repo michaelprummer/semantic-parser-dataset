@@ -1,0 +1,21 @@
+{
+  "batch_id": "Batch-2024-0547",
+  "reactors": [
+    {
+      "tag": "R-101",
+      "recipe_code": "RX-445A",
+      "batch_step": "reaction",
+      "setpoint": 185.5,
+      "deviation": 0.3,
+      "lot_number": "L20240547-01"
+    },
+    {
+      "tag": "R-102",
+      "recipe_code": "RX-445A",
+      "batch_step": "cooling",
+      "setpoint": 45.0,
+      "deviation": -1.2,
+      "lot_number": "L20240547-02"
+    }
+  ]
+}

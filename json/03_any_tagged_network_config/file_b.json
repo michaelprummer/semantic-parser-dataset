@@ -1,0 +1,29 @@
+{
+  "segment": "DMZ-Segment-3",
+  "devices": [
+    {
+      "device_name": "fw-edge-01",
+      "ipv4": "10.0.3.1",
+      "netmask": "255.255.255.0",
+      "vlan": 300,
+      "hw_addr": "AA:BB:CC:DD:EE:01",
+      "function": "firewall"
+    },
+    {
+      "device_name": "lb-web-01",
+      "ipv4": "10.0.3.10",
+      "netmask": "255.255.255.0",
+      "vlan": 300,
+      "hw_addr": "AA:BB:CC:DD:EE:10",
+      "function": "load_balancer"
+    },
+    {
+      "device_name": "app-srv-01",
+      "ipv4": "10.0.3.20",
+      "netmask": "255.255.255.0",
+      "vlan": 301,
+      "hw_addr": "AA:BB:CC:DD:EE:20",
+      "function": "application_server"
+    }
+  ]
+}

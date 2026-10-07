@@ -1,0 +1,34 @@
+{
+  "scenario": "nested_hierarchy",
+  "description": "Sorting hub \u2192 conveyor lines \u2192 sensors.",
+  "shared_semids": [
+    "POS",
+    "STATE",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "expected_asset_count": {
+    "file_a": 6,
+    "file_b": 6
+  },
+  "notes": "Unbalanced tree (2 sensors on one line, 1 on other). Zero weight value."
+}

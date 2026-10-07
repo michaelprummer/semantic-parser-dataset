@@ -1,0 +1,32 @@
+{
+  "scenario": "partial_overlap",
+  "description": "REVERSED overlap: B is richer than A. A has only name/type/status, B adds position/temperature/power.",
+  "shared_semids": [
+    "STATE",
+    "TYPE"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [
+    "POS",
+    "THERM",
+    "POWER"
+  ],
+  "a_to_b_expected_survivors": {
+    "STATE": true,
+    "TYPE": true
+  },
+  "b_to_a_expected_survivors": {
+    "STATE": true,
+    "TYPE": true,
+    "POS": false,
+    "THERM": false,
+    "POWER": false
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [
+    "POS",
+    "THERM",
+    "POWER"
+  ],
+  "notes": "Tests reversed partial overlap \u2014 FILE B has MORE properties than A. B\u2192A loses data."
+}

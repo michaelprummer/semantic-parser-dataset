@@ -1,0 +1,43 @@
+{
+  "plant_section": "ReactorSection",
+  "vessels": [
+    {
+      "name": "Reactor-R100",
+      "type": "stirred_reactor",
+      "location": [0.0, 0.0, 0.0],
+      "status": "running",
+      "temp_c": 180.5,
+      "pressure_bar": 4.2,
+      "sub_equipment": [
+        {
+          "name": "Agitator-AG1",
+          "type": "impeller_agitator",
+          "status": "running",
+          "speed_rpm": 120.0
+        },
+        {
+          "name": "TempSensor-TT1",
+          "type": "thermocouple",
+          "status": "active",
+          "temp_c": 180.2
+        }
+      ]
+    },
+    {
+      "name": "HeatExchanger-HX200",
+      "type": "shell_and_tube",
+      "location": [5.0, 0.0, 0.0],
+      "status": "active",
+      "temp_c": 95.0,
+      "pressure_bar": 2.8,
+      "sub_equipment": [
+        {
+          "name": "CoolantPump-CP1",
+          "type": "coolant_pump",
+          "status": "running",
+          "flow_m3h": 45.0
+        }
+      ]
+    }
+  ]
+}

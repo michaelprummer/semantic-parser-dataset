@@ -1,0 +1,41 @@
+{
+  "port": "ContainerTerminal-Alpha",
+  "vessels": [
+    {
+      "name": "CargoShip-Meridian",
+      "type": "container_ship",
+      "position": [
+        100.0,
+        50.0,
+        0.0
+      ],
+      "status": "docked",
+      "speed": 0.0,
+      "weight": 180000
+    },
+    {
+      "name": "Tugboat-T3",
+      "type": "tugboat",
+      "position": [
+        95.0,
+        48.0,
+        0.0
+      ],
+      "status": "standby",
+      "speed": 0.0,
+      "weight": 500
+    },
+    {
+      "name": "Crane-Gantry-1",
+      "type": "gantry_crane",
+      "position": [
+        100.0,
+        45.0,
+        0.0
+      ],
+      "status": "loading",
+      "speed": 0.5,
+      "weight": 2000
+    }
+  ]
+}

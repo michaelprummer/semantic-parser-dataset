@@ -1,0 +1,26 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1"
+  ],
+  "@type": "Thing",
+  "title": "Generic-59",
+  "id": "urn:test:thing:generic_59_json",
+  "securityDefinitions": {
+    "nosec_sc": {
+      "scheme": "nosec"
+    }
+  },
+  "security": "nosec_sc",
+  "properties": {
+    "fld1": {
+      "title": "Field 1",
+      "type": "number",
+      "value": 42.0
+    },
+    "fld2": {
+      "title": "Field 2",
+      "type": "number",
+      "value": 7.0
+    }
+  }
+}

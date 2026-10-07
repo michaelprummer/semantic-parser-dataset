@@ -1,0 +1,68 @@
+{
+  "$anchor": "a1000001-0000-0000-0000-000000000001",
+  "$name": "10_units_alias_lookup",
+  "$concept": "asset",
+  "$abstraction": "instance",
+  "assets": {
+    "Device-1": {
+      "$anchor": "a1000001-0000-0000-0000-000000000010",
+      "$name": "Device-1",
+      "$concept": "asset",
+      "$abstraction": "instance",
+      "EquipmentType": {
+        "$anchor": "a1000001-0000-0000-0000-000000000001",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "equipment"
+      },
+      "OperatingStatus": {
+        "$anchor": "a1000001-0000-0000-0000-000000000002",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "active"
+      },
+      "Position": {
+        "$anchor": "a1000001-0000-0000-0000-000000000003",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "[1.0, 2.0, 3.0]",
+        "$unit": "metre"
+      },
+      "Temperature": {
+        "$anchor": "a1000001-0000-0000-0000-000000000004",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 22.0,
+        "$unit": "DEG_C"
+      },
+      "Speed": {
+        "$anchor": "a1000001-0000-0000-0000-000000000005",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 25,
+        "$unit": "metrePerSecond-Time"
+      },
+      "Weight": {
+        "$anchor": "a1000001-0000-0000-0000-000000000006",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 1500,
+        "$unit": "kilogram"
+      },
+      "Power": {
+        "$anchor": "a1000001-0000-0000-0000-000000000007",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 5000,
+        "$unit": "watt"
+      },
+      "Pressure": {
+        "$anchor": "a1000001-0000-0000-0000-000000000008",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 101325,
+        "$unit": "pascal"
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "scene_name": "CarAssembly-ModelX",
+  "elements": [
+    {
+      "name": "ModelX-001",
+      "type": "electric_sedan",
+      "status": "assembling",
+      "weight": 2100
+    },
+    {
+      "name": "Powertrain",
+      "type": "drive_system",
+      "weight": 450,
+      "status": "installed",
+      "parent": "ModelX-001"
+    },
+    {
+      "name": "Motor-Front",
+      "type": "electric_motor",
+      "position": [
+        1.5,
+        0.0,
+        0.3
+      ],
+      "power": 150000,
+      "speed": 16000,
+      "parent": "Powertrain"
+    },
+    {
+      "name": "Motor-Rear",
+      "type": "electric_motor",
+      "position": [
+        3.5,
+        0.0,
+        0.3
+      ],
+      "power": 200000,
+      "speed": 16000,
+      "parent": "Powertrain"
+    },
+    {
+      "name": "Battery-Pack",
+      "type": "li_ion_battery",
+      "position": [
+        2.5,
+        0.0,
+        0.1
+      ],
+      "power": 75000,
+      "weight": 600,
+      "parent": "Powertrain"
+    },
+    {
+      "name": "Chassis",
+      "type": "body_structure",
+      "weight": 800,
+      "status": "welded",
+      "parent": "ModelX-001"
+    },
+    {
+      "name": "Frame-Front",
+      "type": "subframe",
+      "position": [
+        1.0,
+        0.0,
+        0.2
+      ],
+      "weight": 120,
+      "parent": "Chassis"
+    },
+    {
+      "name": "Frame-Rear",
+      "type": "subframe",
+      "position": [
+        3.8,
+        0.0,
+        0.2
+      ],
+      "weight": 110,
+      "parent": "Chassis"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "scenario": "full_overlap",
+  "description": "Open-pit mining operation. Large position values, heavy equipment, negative z-positions (below ground).",
+  "shared_semids": [
+    "POS",
+    "STATE",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "notes": "Key diffs: name/unit_id, type/class, position/gps, status/activity, speed/ground_speed, weight/gross_weight. Large values."
+}

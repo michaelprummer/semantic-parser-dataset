@@ -1,0 +1,15 @@
+{
+  "system": "TemperatureMonitor",
+  "sensors": [
+    {
+      "id": "Thermocouple-A",
+      "position": [1.0, 0.0, 2.0],
+      "status": "normal"
+    },
+    {
+      "id": "Thermocouple-B",
+      "position": [3.0, 0.0, 2.0],
+      "status": "warning"
+    }
+  ]
+}

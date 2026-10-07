@@ -1,0 +1,37 @@
+{
+  "line_name": "AssemblyLine",
+  "stations": [
+    {
+      "name": "Station-A",
+      "type": "assembly_station",
+      "position": [0.0, 0.0, 0.0],
+      "tools": [
+        {
+          "name": "Gripper-1",
+          "type": "pneumatic_gripper",
+          "position": [0.2, 0.0, 1.5],
+          "grip_force": 50.0
+        },
+        {
+          "name": "Welder-1",
+          "type": "spot_welder",
+          "position": [0.5, 0.0, 1.2],
+          "weld_current": 12000.0
+        }
+      ]
+    },
+    {
+      "name": "Station-B",
+      "type": "inspection_station",
+      "position": [5.0, 0.0, 0.0],
+      "tools": [
+        {
+          "name": "Camera-1",
+          "type": "vision_sensor",
+          "position": [5.0, 0.0, 2.5],
+          "resolution": "4K"
+        }
+      ]
+    }
+  ]
+}

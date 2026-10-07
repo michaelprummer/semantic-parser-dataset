@@ -1,0 +1,110 @@
+{
+  "assetAdministrationShells": [
+    {
+      "id": "urn:factory:aas:TempMonitor",
+      "idShort": "TemperatureMonitor",
+      "modelType": "AssetAdministrationShell",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "urn:factory:aas:TempMonitor"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [{ "type": "Submodel", "value": "urn:factory:submodel:Sensors" }]
+        }
+      ]
+    }
+  ],
+  "submodels": [
+    {
+      "id": "urn:factory:submodel:Sensors",
+      "idShort": "Sensors",
+      "modelType": "Submodel",
+      "submodelElements": [
+        {
+          "idShort": "ThermocoupleA",
+          "modelType": "SubmodelElementCollection",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [{ "type": "ConceptDescription", "value": "0173-1#02-AAB381#001" }]
+          },
+          "value": [
+            {
+              "idShort": "Position",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                { "idShort": "x", "modelType": "Property", "valueType": "xs:double", "value": "1.0" },
+                { "idShort": "y", "modelType": "Property", "valueType": "xs:double", "value": "0.0" },
+                { "idShort": "z", "modelType": "Property", "valueType": "xs:double", "value": "2.0" }
+              ]
+            },
+            {
+              "idShort": "Temperature",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "85.3",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [{ "type": "ConceptDescription", "value": "0173-1#02-AAB999#001" }]
+              }
+            },
+            {
+              "idShort": "Unit",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "celsius"
+            },
+            {
+              "idShort": "Status",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "normal"
+            }
+          ]
+        },
+        {
+          "idShort": "ThermocoupleB",
+          "modelType": "SubmodelElementCollection",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [{ "type": "ConceptDescription", "value": "0173-1#02-AAB381#001" }]
+          },
+          "value": [
+            {
+              "idShort": "Position",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                { "idShort": "x", "modelType": "Property", "valueType": "xs:double", "value": "3.0" },
+                { "idShort": "y", "modelType": "Property", "valueType": "xs:double", "value": "0.0" },
+                { "idShort": "z", "modelType": "Property", "valueType": "xs:double", "value": "2.0" }
+              ]
+            },
+            {
+              "idShort": "Temperature",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "92.1",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [{ "type": "ConceptDescription", "value": "0173-1#02-AAB999#001" }]
+              }
+            },
+            {
+              "idShort": "Unit",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "celsius"
+            },
+            {
+              "idShort": "Status",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "warning"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

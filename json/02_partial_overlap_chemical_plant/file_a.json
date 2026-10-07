@@ -1,0 +1,41 @@
+{
+  "plant_name": "ChemicalProcessingUnit",
+  "assets": [
+    {
+      "name": "Reactor-R100",
+      "type": "chemical_reactor",
+      "position": [10.0, 5.0, 2.0],
+      "status": "running",
+      "speed": 120,
+      "length": 4.5,
+      "weight": 8500,
+      "temperature": 350,
+      "frequency": 60,
+      "power": 75000
+    },
+    {
+      "name": "Pump-P200",
+      "type": "centrifugal_pump",
+      "position": [12.0, 5.0, 0.0],
+      "status": "standby",
+      "speed": 1450,
+      "length": 0.8,
+      "weight": 120,
+      "temperature": 45,
+      "frequency": 50,
+      "power": 5500
+    },
+    {
+      "name": "HeatExchanger-HX1",
+      "type": "heat_exchanger",
+      "position": [14.0, 5.0, 1.0],
+      "status": "running",
+      "speed": 0,
+      "length": 3.2,
+      "weight": 2200,
+      "temperature": 280,
+      "frequency": 0,
+      "power": 0
+    }
+  ]
+}

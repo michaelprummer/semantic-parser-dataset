@@ -1,0 +1,49 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
+  ],
+  "@type": "Thing",
+  "title": "Device-26",
+  "id": "urn:test:thing:cooling_26",
+  "securityDefinitions": {
+    "nosec_sc": {
+      "scheme": "nosec"
+    }
+  },
+  "security": "nosec_sc",
+  "properties": {
+    "deviceType": {
+      "title": "Type",
+      "type": "string",
+      "value": "equipment"
+    },
+    "position": {
+      "title": "Position",
+      "type": "array",
+      "value": [
+        1.0,
+        2.0,
+        3.0
+      ]
+    },
+    "status": {
+      "title": "Status",
+      "type": "string",
+      "value": "active"
+    },
+    "speed": {
+      "title": "Speed",
+      "type": "number",
+      "value": 2.5
+    },
+    "temperature": {
+      "title": "Temperature",
+      "type": "number",
+      "unit": "om:degreeCelsius",
+      "value": 25.5
+    }
+  }
+}

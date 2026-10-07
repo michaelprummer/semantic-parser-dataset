@@ -1,0 +1,60 @@
+{
+  "plant_name": "Refinery-Complex-2",
+  "complex": {
+    "name": "Refinery-2",
+    "type": "oil_refinery",
+    "status": "running",
+    "areas": [
+      {
+        "name": "Crude-Unit",
+        "type": "distillation_area",
+        "status": "operating",
+        "equipment": [
+          {
+            "name": "Column-CDU1",
+            "type": "distillation_column",
+            "position": [
+              10.0,
+              0.0,
+              30.0
+            ],
+            "temperature": 370.0,
+            "weight": 85000,
+            "instruments": [
+              {
+                "name": "TT-101",
+                "type": "thermocouple",
+                "position": [
+                  10.0,
+                  0.0,
+                  25.0
+                ],
+                "temperature": 370.0
+              },
+              {
+                "name": "PT-102",
+                "type": "pressure_tx",
+                "position": [
+                  10.0,
+                  0.0,
+                  28.0
+                ],
+                "temperature": 350.0
+              },
+              {
+                "name": "LT-103",
+                "type": "level_tx",
+                "position": [
+                  10.0,
+                  0.0,
+                  15.0
+                ],
+                "temperature": 200.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "network_name": "SortingHub-Central",
+  "network": {
+    "name": "Hub-Central",
+    "type": "sorting_system",
+    "status": "active",
+    "lines": [
+      {
+        "name": "Inbound-Line",
+        "type": "intake_conveyor",
+        "position": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "speed": 2.0,
+        "sensors": [
+          {
+            "name": "Barcode-In-1",
+            "type": "barcode_reader",
+            "position": [
+              1.0,
+              0.0,
+              1.5
+            ],
+            "status": "scanning"
+          },
+          {
+            "name": "WeightScale-In",
+            "type": "load_cell",
+            "position": [
+              3.0,
+              0.0,
+              1.0
+            ],
+            "status": "measuring",
+            "weight": 0
+          }
+        ]
+      },
+      {
+        "name": "Outbound-A",
+        "type": "dispatch_conveyor",
+        "position": [
+          20.0,
+          0.0,
+          1.0
+        ],
+        "speed": 3.0,
+        "sensors": [
+          {
+            "name": "Barcode-Out-A",
+            "type": "barcode_reader",
+            "position": [
+              21.0,
+              0.0,
+              1.5
+            ],
+            "status": "scanning"
+          }
+        ]
+      }
+    ]
+  }
+}

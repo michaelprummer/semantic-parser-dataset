@@ -1,0 +1,243 @@
+{
+  "assetAdministrationShells": [
+    {
+      "id": "urn:factory:aas:AssemblyLine",
+      "idShort": "AssemblyLine",
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:factory:submodel:Stations"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "urn:factory:aas:AssemblyLine"
+      }
+    }
+  ],
+  "submodels": [
+    {
+      "id": "urn:factory:submodel:Stations",
+      "idShort": "Stations",
+      "submodelElements": [
+        {
+          "idShort": "Station-A",
+          "modelType": "SubmodelElementCollection",
+          "value": [
+            {
+              "idShort": "Type",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "assembly_station"
+            },
+            {
+              "idShort": "Position",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                {
+                  "idShort": "x",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "0.0"
+                },
+                {
+                  "idShort": "y",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "0.0"
+                },
+                {
+                  "idShort": "z",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "0.0"
+                }
+              ]
+            },
+            {
+              "idShort": "Tools",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                {
+                  "idShort": "Gripper-1",
+                  "modelType": "SubmodelElementCollection",
+                  "value": [
+                    {
+                      "idShort": "Type",
+                      "modelType": "Property",
+                      "valueType": "xs:string",
+                      "value": "pneumatic_gripper"
+                    },
+                    {
+                      "idShort": "Position",
+                      "modelType": "SubmodelElementCollection",
+                      "value": [
+                        {
+                          "idShort": "x",
+                          "modelType": "Property",
+                          "valueType": "xs:double",
+                          "value": "0.2"
+                        },
+                        {
+                          "idShort": "y",
+                          "modelType": "Property",
+                          "valueType": "xs:double",
+                          "value": "0.0"
+                        },
+                        {
+                          "idShort": "z",
+                          "modelType": "Property",
+                          "valueType": "xs:double",
+                          "value": "1.5"
+                        }
+                      ]
+                    },
+                    {
+                      "idShort": "GripForce",
+                      "modelType": "Property",
+                      "valueType": "xs:double",
+                      "value": "50.0"
+                    }
+                  ]
+                },
+                {
+                  "idShort": "Welder-1",
+                  "modelType": "SubmodelElementCollection",
+                  "value": [
+                    {
+                      "idShort": "Type",
+                      "modelType": "Property",
+                      "valueType": "xs:string",
+                      "value": "spot_welder"
+                    },
+                    {
+                      "idShort": "Position",
+                      "modelType": "SubmodelElementCollection",
+                      "value": [
+                        {
+                          "idShort": "x",
+                          "modelType": "Property",
+                          "valueType": "xs:double",
+                          "value": "0.5"
+                        },
+                        {
+                          "idShort": "y",
+                          "modelType": "Property",
+                          "valueType": "xs:double",
+                          "value": "0.0"
+                        },
+                        {
+                          "idShort": "z",
+                          "modelType": "Property",
+                          "valueType": "xs:double",
+                          "value": "1.2"
+                        }
+                      ]
+                    },
+                    {
+                      "idShort": "WeldCurrent",
+                      "modelType": "Property",
+                      "valueType": "xs:double",
+                      "value": "12000.0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "idShort": "Station-B",
+          "modelType": "SubmodelElementCollection",
+          "value": [
+            {
+              "idShort": "Type",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "inspection_station"
+            },
+            {
+              "idShort": "Position",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                {
+                  "idShort": "x",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "5.0"
+                },
+                {
+                  "idShort": "y",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "0.0"
+                },
+                {
+                  "idShort": "z",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "0.0"
+                }
+              ]
+            },
+            {
+              "idShort": "Tools",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                {
+                  "idShort": "Camera-1",
+                  "modelType": "SubmodelElementCollection",
+                  "value": [
+                    {
+                      "idShort": "Type",
+                      "modelType": "Property",
+                      "valueType": "xs:string",
+                      "value": "vision_sensor"
+                    },
+                    {
+                      "idShort": "Position",
+                      "modelType": "SubmodelElementCollection",
+                      "value": [
+                        {
+                          "idShort": "x",
+                          "modelType": "Property",
+                          "valueType": "xs:double",
+                          "value": "5.0"
+                        },
+                        {
+                          "idShort": "y",
+                          "modelType": "Property",
+                          "valueType": "xs:double",
+                          "value": "0.0"
+                        },
+                        {
+                          "idShort": "z",
+                          "modelType": "Property",
+                          "valueType": "xs:double",
+                          "value": "2.5"
+                        }
+                      ]
+                    },
+                    {
+                      "idShort": "Resolution",
+                      "modelType": "Property",
+                      "valueType": "xs:string",
+                      "value": "4K"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ]
+}

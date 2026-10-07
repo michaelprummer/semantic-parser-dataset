@@ -1,0 +1,41 @@
+{
+  "operation": "OpenPit-Copper-KZ",
+  "fleet": [
+    {
+      "unit_id": "Excavator-EX350",
+      "class": "hydraulic_excavator",
+      "gps": [
+        200.0,
+        150.0,
+        -30.0
+      ],
+      "activity": "digging",
+      "ground_speed": 0.0,
+      "gross_weight": 35000
+    },
+    {
+      "unit_id": "Haul-Truck-01",
+      "class": "mining_truck",
+      "gps": [
+        210.0,
+        155.0,
+        -28.0
+      ],
+      "activity": "loading",
+      "ground_speed": 0.0,
+      "gross_weight": 120000
+    },
+    {
+      "unit_id": "Drill-D100",
+      "class": "rotary_drill",
+      "gps": [
+        180.0,
+        140.0,
+        -25.0
+      ],
+      "activity": "drilling",
+      "ground_speed": 120,
+      "gross_weight": 15000
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "scenario": "units",
+  "test_case": "alias_lookup",
+  "description": "Data uses alias forms (metre, DEG_C, metrePerSecond-Time, kilogram, watt, pascal). expected_units asserts the canonical REC 20 symbols. Tests whether the parser normalizes aliases to canonical units or preserves them verbatim.",
+  "shared_semids": [
+    "POS",
+    "POWER",
+    "PRESS",
+    "STATE",
+    "THERM",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "file_a_expected_semids": [
+    "POS",
+    "POWER",
+    "PRESS",
+    "STATE",
+    "THERM",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "file_b_expected_semids": [
+    "POS",
+    "POWER",
+    "PRESS",
+    "STATE",
+    "THERM",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "POWER": true,
+    "PRESS": true,
+    "STATE": true,
+    "THERM": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "POWER": true,
+    "PRESS": true,
+    "STATE": true,
+    "THERM": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "a_to_b_expected_units": {
+    "POS": "m",
+    "THERM": "°C",
+    "VEL": "m/s",
+    "WEIGHT": "kg",
+    "POWER": "W",
+    "PRESS": "Pa"
+  },
+  "b_to_a_expected_units": {
+    "POS": "m",
+    "THERM": "°C",
+    "VEL": "m/s",
+    "WEIGHT": "kg",
+    "POWER": "W",
+    "PRESS": "Pa"
+  },
+  "notes": "units test case: 10_units_alias_lookup"
+}

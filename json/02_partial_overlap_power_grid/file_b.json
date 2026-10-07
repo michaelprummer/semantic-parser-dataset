@@ -1,0 +1,23 @@
+{
+  "substation": "SubStation-Delta",
+  "devices": [
+    {
+      "id": "Xfmr-T1",
+      "category": "power_transformer",
+      "location": [
+        5.0,
+        0.0,
+        3.0
+      ]
+    },
+    {
+      "id": "Breaker-CB1",
+      "category": "circuit_breaker",
+      "location": [
+        3.0,
+        0.0,
+        2.0
+      ]
+    }
+  ]
+}

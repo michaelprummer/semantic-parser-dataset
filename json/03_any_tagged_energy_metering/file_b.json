@@ -1,0 +1,32 @@
+{
+  "meter_group": "Building-A-Meters",
+  "devices": [
+    {
+      "device_id": "EM-001",
+      "current_transformer": "200:5",
+      "voltage_transformer": "1:1",
+      "rate_schedule": "TOU-C",
+      "interval_minutes": 15,
+      "kfactor": 0.1,
+      "cycle": "monthly"
+    },
+    {
+      "device_id": "EM-002",
+      "current_transformer": "400:5",
+      "voltage_transformer": "1:1",
+      "rate_schedule": "TOU-B",
+      "interval_minutes": 30,
+      "kfactor": 1.0,
+      "cycle": "monthly"
+    },
+    {
+      "device_id": "EM-003",
+      "current_transformer": "100:5",
+      "voltage_transformer": "1:1",
+      "rate_schedule": "FLAT",
+      "interval_minutes": 15,
+      "kfactor": 0.01,
+      "cycle": "weekly"
+    }
+  ]
+}

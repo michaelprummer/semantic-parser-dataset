@@ -1,0 +1,29 @@
+{
+  "plant_section": "Refinery-Unit-5",
+  "process_units": [
+    {
+      "unit_name": "Column-C1",
+      "unit_class": "distillation_column",
+      "coords": [
+        10.0,
+        0.0,
+        20.0
+      ],
+      "condition": "operating",
+      "power_draw": 85000,
+      "flow_rate": 150.0
+    },
+    {
+      "unit_name": "Drum-D1",
+      "unit_class": "reflux_drum",
+      "coords": [
+        12.0,
+        0.0,
+        5.0
+      ],
+      "condition": "level_ok",
+      "power_draw": 5000,
+      "flow_rate": 80.0
+    }
+  ]
+}

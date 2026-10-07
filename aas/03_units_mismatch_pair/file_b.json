@@ -1,0 +1,129 @@
+{
+  "assetAdministrationShells": [
+    {
+      "id": "urn:test:03_units_mismatch_pair",
+      "idShort": "X03_units_mismatch_pair",
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:test:03_units_mismatch_pair:submodel"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "urn:test:03_units_mismatch_pair"
+      }
+    }
+  ],
+  "submodels": [
+    {
+      "id": "urn:test:03_units_mismatch_pair:submodel",
+      "idShort": "Assets",
+      "submodelElements": [
+        {
+          "idShort": "Device-1",
+          "modelType": "SubmodelElementCollection",
+          "value": [
+            {
+              "idShort": "Type",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "equipment"
+            },
+            {
+              "idShort": "Status",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "active"
+            },
+            {
+              "idShort": "Position",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "[3.2808, 6.5617, 9.8425]",
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "ft"
+                }
+              ]
+            },
+            {
+              "idShort": "Temperature",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "71.6",
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "°F"
+                }
+              ]
+            },
+            {
+              "idShort": "Speed",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "82.021",
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "ft/s"
+                }
+              ]
+            },
+            {
+              "idShort": "Weight",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "3306.93",
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "lb"
+                }
+              ]
+            },
+            {
+              "idShort": "Power",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "5.0",
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kW"
+                }
+              ]
+            },
+            {
+              "idShort": "Pressure",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "14.696",
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "lbf/in²"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ]
+}

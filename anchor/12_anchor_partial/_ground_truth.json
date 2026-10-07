@@ -1,0 +1,43 @@
+{
+  "scenario": "anchor_partial",
+  "description": "Anchor format with electrical properties (RatedCurrent, RatedVoltage, TripCount) vs. flat JSON with current_rating but also manufacturer and installation_date. Tests partial overlap where each side has unique properties.",
+  "file_a_expected_semids": [
+    "POS",
+    "TYPE",
+    "STATE",
+    "CURR",
+    "VOLT"
+  ],
+  "file_b_expected_semids": [
+    "POS",
+    "TYPE",
+    "STATE",
+    "CURR"
+  ],
+  "shared_semids": [
+    "POS",
+    "TYPE",
+    "STATE",
+    "CURR"
+  ],
+  "a_only_semids": [
+    "VOLT"
+  ],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "TYPE": true,
+    "STATE": true,
+    "CURR": true,
+    "VOLT": false
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "TYPE": true,
+    "STATE": true,
+    "CURR": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "notes": "Partial overlap: Anchor side has RatedVoltage (VOLT) and TripCount which JSON side lacks. JSON side has manufacturer and installation_date which are untaggable. RatedCurrent maps to CURR."
+}

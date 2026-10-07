@@ -1,0 +1,23 @@
+{
+  "panel_id": "Switchgear-Main",
+  "devices": [
+    {
+      "label": "Breaker-CB1",
+      "device_type": "circuit_breaker",
+      "position": [1.0, 0.0, 2.0],
+      "state": "closed",
+      "current_rating_a": 630.0,
+      "installation_date": "2022-03-15",
+      "manufacturer": "VendorA"
+    },
+    {
+      "label": "Transformer-TX1",
+      "device_type": "power_transformer",
+      "position": [3.0, 0.0, 0.0],
+      "state": "energized",
+      "current_rating_a": 1250.0,
+      "installation_date": "2021-08-20",
+      "manufacturer": "VendorB"
+    }
+  ]
+}

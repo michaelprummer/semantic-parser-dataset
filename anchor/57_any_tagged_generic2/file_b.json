@@ -1,0 +1,27 @@
+{
+  "$anchor": "b1000001-0000-0000-0000-000000000057",
+  "$name": "57_any_tagged_generic2_b",
+  "$concept": "asset",
+  "$abstraction": "instance",
+  "assets": {
+    "Device-1": {
+      "$anchor": "b1000057-0000-0000-0000-000000000001",
+      "$name": "Device-1",
+      "$concept": "asset",
+      "$abstraction": "instance",
+      "Temperature": {
+        "$anchor": "b1000057-0000-0000-0000-000000000002",
+        "$concept": "attribute",
+        "$datatype": "double",
+        "$value": "22.0",
+        "$unit": "°C"
+      },
+      "fld1": {
+        "$anchor": "b1000057-0000-0000-0000-000000000003",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "data"
+      }
+    }
+  }
+}

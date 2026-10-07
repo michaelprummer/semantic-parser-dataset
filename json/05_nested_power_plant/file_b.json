@@ -1,0 +1,82 @@
+{
+  "scene_name": "GasTurbine-Station-4",
+  "elements": [
+    {
+      "name": "GTPP-4",
+      "type": "combined_cycle",
+      "status": "baseload",
+      "power": 800000
+    },
+    {
+      "name": "GT-Unit-1",
+      "type": "gas_turbine",
+      "position": [
+        0.0,
+        0.0,
+        5.0
+      ],
+      "power": 300000,
+      "speed": 3600,
+      "temperature": 1200,
+      "parent": "GTPP-4"
+    },
+    {
+      "name": "Compressor-1",
+      "type": "axial_compressor",
+      "position": [
+        0.0,
+        0.0,
+        5.0
+      ],
+      "speed": 3600,
+      "temperature": 400,
+      "parent": "GT-Unit-1"
+    },
+    {
+      "name": "Combustor-1",
+      "type": "can_combustor",
+      "position": [
+        2.0,
+        0.0,
+        5.0
+      ],
+      "temperature": 1200,
+      "power": 0,
+      "parent": "GT-Unit-1"
+    },
+    {
+      "name": "HRSG-1",
+      "type": "heat_recovery_sg",
+      "position": [
+        10.0,
+        0.0,
+        8.0
+      ],
+      "power": 0,
+      "temperature": 550,
+      "parent": "GTPP-4"
+    },
+    {
+      "name": "Superheater-1",
+      "type": "heat_exchanger",
+      "position": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "temperature": 550,
+      "parent": "HRSG-1"
+    },
+    {
+      "name": "Economizer-1",
+      "type": "heat_exchanger",
+      "position": [
+        10.0,
+        0.0,
+        6.0
+      ],
+      "temperature": 180,
+      "parent": "HRSG-1"
+    }
+  ]
+}

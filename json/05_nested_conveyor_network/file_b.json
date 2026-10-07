@@ -1,0 +1,66 @@
+{
+  "scene_name": "SortingHub-Central",
+  "elements": [
+    {
+      "name": "Hub-Central",
+      "type": "sorting_system",
+      "status": "active"
+    },
+    {
+      "name": "Inbound-Line",
+      "type": "intake_conveyor",
+      "position": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "speed": 2.0,
+      "parent": "Hub-Central"
+    },
+    {
+      "name": "Barcode-In-1",
+      "type": "barcode_reader",
+      "position": [
+        1.0,
+        0.0,
+        1.5
+      ],
+      "status": "scanning",
+      "parent": "Inbound-Line"
+    },
+    {
+      "name": "WeightScale-In",
+      "type": "load_cell",
+      "position": [
+        3.0,
+        0.0,
+        1.0
+      ],
+      "status": "measuring",
+      "weight": 0,
+      "parent": "Inbound-Line"
+    },
+    {
+      "name": "Outbound-A",
+      "type": "dispatch_conveyor",
+      "position": [
+        20.0,
+        0.0,
+        1.0
+      ],
+      "speed": 3.0,
+      "parent": "Hub-Central"
+    },
+    {
+      "name": "Barcode-Out-A",
+      "type": "barcode_reader",
+      "position": [
+        21.0,
+        0.0,
+        1.5
+      ],
+      "status": "scanning",
+      "parent": "Outbound-A"
+    }
+  ]
+}

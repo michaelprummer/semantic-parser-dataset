@@ -1,0 +1,129 @@
+{
+  "assetAdministrationShells": [
+    {
+      "id": "urn:test:10_units_alias_lookup",
+      "idShort": "X10_units_alias_lookup",
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:test:10_units_alias_lookup:submodel"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "urn:test:10_units_alias_lookup"
+      }
+    }
+  ],
+  "submodels": [
+    {
+      "id": "urn:test:10_units_alias_lookup:submodel",
+      "idShort": "Assets",
+      "submodelElements": [
+        {
+          "idShort": "Device-1",
+          "modelType": "SubmodelElementCollection",
+          "value": [
+            {
+              "idShort": "Type",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "equipment"
+            },
+            {
+              "idShort": "Status",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "active"
+            },
+            {
+              "idShort": "Position",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "[1.0, 2.0, 3.0]",
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "metre"
+                }
+              ]
+            },
+            {
+              "idShort": "Temperature",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "22.0",
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "DEG_C"
+                }
+              ]
+            },
+            {
+              "idShort": "Speed",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "25",
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "metrePerSecond-Time"
+                }
+              ]
+            },
+            {
+              "idShort": "Weight",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "1500",
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "kilogram"
+                }
+              ]
+            },
+            {
+              "idShort": "Power",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "5000",
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "watt"
+                }
+              ]
+            },
+            {
+              "idShort": "Pressure",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "101325",
+              "qualifiers": [
+                {
+                  "type": "unit",
+                  "valueType": "xs:string",
+                  "value": "pascal"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ]
+}

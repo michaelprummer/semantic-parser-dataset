@@ -1,0 +1,14 @@
+{
+  "scenario": "57_any_tagged_generic2",
+  "description": "Any-tagged mixed: a real semantic field (Temperature -> THERM) alongside a generic ANY field. The semantic field must survive; the generic field is an expected loss.",
+  "file_a_expected_semids": ["THERM"],
+  "file_b_expected_semids": ["THERM"],
+  "shared_semids": ["THERM"],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {"THERM": true},
+  "b_to_a_expected_survivors": {"THERM": true},
+  "a_to_b_expected_losses": ["field1"],
+  "b_to_a_expected_losses": ["fld1"],
+  "notes": "Temperature (THERM) survives; generic field1/fld1 has no standard SemId and is dropped."
+}

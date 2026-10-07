@@ -1,0 +1,159 @@
+{
+  "assetAdministrationShells": [
+    {
+      "id": "urn:test:38_plants",
+      "idShort": "X38_plants",
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:test:38_plants:submodel"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "urn:test:38_plants"
+      }
+    }
+  ],
+  "submodels": [
+    {
+      "id": "urn:test:38_plants:submodel",
+      "idShort": "Assets",
+      "submodelElements": [
+        {
+          "idShort": "Section-0",
+          "modelType": "SubmodelElementCollection",
+          "value": [
+            {
+              "idShort": "Type",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "unit"
+            },
+            {
+              "idShort": "Position",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                {
+                  "idShort": "x",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "0.0"
+                },
+                {
+                  "idShort": "y",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "0.0"
+                },
+                {
+                  "idShort": "z",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "0.0"
+                }
+              ]
+            },
+            {
+              "idShort": "Status",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "active"
+            }
+          ]
+        },
+        {
+          "idShort": "Section-1",
+          "modelType": "SubmodelElementCollection",
+          "value": [
+            {
+              "idShort": "Type",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "unit"
+            },
+            {
+              "idShort": "Position",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                {
+                  "idShort": "x",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "1.0"
+                },
+                {
+                  "idShort": "y",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "0.0"
+                },
+                {
+                  "idShort": "z",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "0.0"
+                }
+              ]
+            },
+            {
+              "idShort": "Status",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "active"
+            }
+          ]
+        },
+        {
+          "idShort": "Section-2",
+          "modelType": "SubmodelElementCollection",
+          "value": [
+            {
+              "idShort": "Type",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "unit"
+            },
+            {
+              "idShort": "Position",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                {
+                  "idShort": "x",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "2.0"
+                },
+                {
+                  "idShort": "y",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "0.0"
+                },
+                {
+                  "idShort": "z",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "0.0"
+                }
+              ]
+            },
+            {
+              "idShort": "Status",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "active"
+            }
+          ]
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ]
+}

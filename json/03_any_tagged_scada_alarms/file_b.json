@@ -1,0 +1,29 @@
+{
+  "control_system": "SCADA-Plant-North",
+  "points": [
+    {
+      "point_id": "AI-3001",
+      "priority_level": 2,
+      "category": "process_high",
+      "dead_zone": 0.5,
+      "poll_interval": 500,
+      "eu": "bar"
+    },
+    {
+      "point_id": "DI-4002",
+      "priority_level": 1,
+      "category": "safety_trip",
+      "dead_zone": 0,
+      "poll_interval": 100,
+      "eu": "bool"
+    },
+    {
+      "point_id": "AO-5001",
+      "priority_level": 3,
+      "category": "deviation",
+      "dead_zone": 1.0,
+      "poll_interval": 1000,
+      "eu": "percent"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "assetAdministrationShells": [
+    {
+      "id": "urn:test:unitsImperialB",
+      "idShort": "unitsImperialB",
+      "modelType": "AssetAdministrationShell",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "urn:test:unitsImperialB"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [{ "type": "Submodel", "value": "urn:test:unitsImperialB:assets" }]
+        }
+      ]
+    }
+  ],
+  "submodels": [
+    {
+      "id": "urn:test:unitsImperialB:assets",
+      "idShort": "Assets",
+      "modelType": "Submodel",
+      "submodelElements": [
+        {
+          "idShort": "Device1",
+          "modelType": "SubmodelElementCollection",
+          "value": [
+            {
+              "idShort": "Type",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "equipment"
+            },
+            {
+              "idShort": "Status",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "active"
+            },
+            {
+              "idShort": "Position",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                {
+                  "idShort": "x",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "1.0",
+                  "qualifiers": [{ "type": "unit", "valueType": "xs:string", "value": "ft" }]
+                },
+                {
+                  "idShort": "y",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "2.0",
+                  "qualifiers": [{ "type": "unit", "valueType": "xs:string", "value": "ft" }]
+                },
+                {
+                  "idShort": "z",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "3.0",
+                  "qualifiers": [{ "type": "unit", "valueType": "xs:string", "value": "ft" }]
+                }
+              ]
+            },
+            {
+              "idShort": "Temperature",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "22.0",
+              "qualifiers": [{ "type": "unit", "valueType": "xs:string", "value": "°F" }]
+            },
+            {
+              "idShort": "Speed",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "25.0",
+              "qualifiers": [{ "type": "unit", "valueType": "xs:string", "value": "ft/s" }]
+            },
+            {
+              "idShort": "Weight",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "1500.0",
+              "qualifiers": [{ "type": "unit", "valueType": "xs:string", "value": "lb" }]
+            },
+            {
+              "idShort": "Power",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "5000.0",
+              "qualifiers": [{ "type": "unit", "valueType": "xs:string", "value": "kW" }]
+            },
+            {
+              "idShort": "Pressure",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "101325.0",
+              "qualifiers": [{ "type": "unit", "valueType": "xs:string", "value": "lbf/in²" }]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

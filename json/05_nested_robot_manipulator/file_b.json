@@ -1,0 +1,73 @@
+{
+  "scene_name": "IndustrialManipulator-KR600",
+  "elements": [
+    {
+      "name": "KR600-Main",
+      "type": "articulated_robot",
+      "status": "operational",
+      "weight": 2450
+    },
+    {
+      "name": "LeftArm",
+      "type": "manipulator_arm",
+      "position": [0.0, 0.5, 1.2],
+      "weight": 180,
+      "parent": "KR600-Main"
+    },
+    {
+      "name": "Shoulder-L",
+      "type": "revolute_joint",
+      "position": [0.0, 0.5, 1.2],
+      "angle": 45.0,
+      "speed": 90,
+      "parent": "LeftArm"
+    },
+    {
+      "name": "Elbow-L",
+      "type": "revolute_joint",
+      "position": [0.0, 0.5, 1.8],
+      "angle": -30.0,
+      "speed": 120,
+      "parent": "LeftArm"
+    },
+    {
+      "name": "Wrist-L",
+      "type": "revolute_joint",
+      "position": [0.0, 0.5, 2.4],
+      "angle": 10.0,
+      "speed": 180,
+      "parent": "LeftArm"
+    },
+    {
+      "name": "RightArm",
+      "type": "manipulator_arm",
+      "position": [0.0, -0.5, 1.2],
+      "weight": 180,
+      "parent": "KR600-Main"
+    },
+    {
+      "name": "Shoulder-R",
+      "type": "revolute_joint",
+      "position": [0.0, -0.5, 1.2],
+      "angle": 60.0,
+      "speed": 90,
+      "parent": "RightArm"
+    },
+    {
+      "name": "Elbow-R",
+      "type": "revolute_joint",
+      "position": [0.0, -0.5, 1.8],
+      "angle": -45.0,
+      "speed": 120,
+      "parent": "RightArm"
+    },
+    {
+      "name": "Wrist-R",
+      "type": "revolute_joint",
+      "position": [0.0, -0.5, 2.4],
+      "angle": 0.0,
+      "speed": 180,
+      "parent": "RightArm"
+    }
+  ]
+}

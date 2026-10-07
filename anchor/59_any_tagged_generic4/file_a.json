@@ -1,0 +1,26 @@
+{
+  "$anchor": "a1000001-0000-0000-0000-000000000059",
+  "$name": "59_any_tagged_generic4",
+  "$concept": "asset",
+  "$abstraction": "instance",
+  "assets": {
+    "Device-1": {
+      "$anchor": "a1000059-0000-0000-0000-000000000001",
+      "$name": "Device-1",
+      "$concept": "asset",
+      "$abstraction": "instance",
+      "field1": {
+        "$anchor": "a1000059-0000-0000-0000-000000000002",
+        "$concept": "attribute",
+        "$datatype": "double",
+        "$value": "42.0"
+      },
+      "field2": {
+        "$anchor": "a1000059-0000-0000-0000-000000000003",
+        "$concept": "attribute",
+        "$datatype": "double",
+        "$value": "7.0"
+      }
+    }
+  }
+}

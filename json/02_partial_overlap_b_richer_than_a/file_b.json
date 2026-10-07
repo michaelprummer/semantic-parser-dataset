@@ -1,0 +1,41 @@
+{
+  "garage_level": "ParkingGarage-Level2",
+  "bays": [
+    {
+      "bay_id": "Spot-A1",
+      "bay_type": "standard",
+      "state": "occupied",
+      "position": [
+        5.0,
+        1.0,
+        6.0
+      ],
+      "temperature": 22.0,
+      "power": 0
+    },
+    {
+      "bay_id": "Spot-A2",
+      "bay_type": "ev_charging",
+      "state": "available",
+      "position": [
+        7.5,
+        1.0,
+        6.0
+      ],
+      "temperature": 23.0,
+      "power": 7200
+    },
+    {
+      "bay_id": "Spot-B1",
+      "bay_type": "handicap",
+      "state": "occupied",
+      "position": [
+        10.0,
+        1.0,
+        6.0
+      ],
+      "temperature": 21.0,
+      "power": 0
+    }
+  ]
+}

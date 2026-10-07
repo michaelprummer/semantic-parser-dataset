@@ -1,0 +1,53 @@
+{
+  "scenario": "nested_hierarchy",
+  "description": "File A uses deeply nested JSON (robot \u2192 arms[] \u2192 joints[]) representing a 3-level asset hierarchy. File B represents the same data as a flat list with parent references. Tests whether the converter preserves semantic properties across different structural representations.",
+  "file_a_expected_semids": [
+    "POS",
+    "ROT",
+    "VEL",
+    "STATE",
+    "TYPE",
+    "WEIGHT"
+  ],
+  "file_b_expected_semids": [
+    "POS",
+    "ROT",
+    "VEL",
+    "STATE",
+    "TYPE",
+    "WEIGHT"
+  ],
+  "shared_semids": [
+    "POS",
+    "ROT",
+    "VEL",
+    "STATE",
+    "TYPE",
+    "WEIGHT"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "ROT": true,
+    "VEL": true,
+    "STATE": true,
+    "TYPE": true,
+    "WEIGHT": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "ROT": true,
+    "VEL": true,
+    "STATE": true,
+    "TYPE": true,
+    "WEIGHT": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "expected_asset_count": {
+    "file_a": 9,
+    "file_b": 9
+  },
+  "notes": "Same semantic content, different structural organization. File A: nested (robot.arms[].joints[]). File B: flat list with parent field. The angle property maps to SemId.Qnt.ROT. Asset counts should be equal (9 total: 1 robot + 2 arms + 6 joints). The key challenge is whether the hierarchy flattening/reconstruction preserves property associations per asset."
+}

@@ -1,0 +1,27 @@
+{
+  "scene_name": "02_units_basic_imperial",
+  "description": "Both files use imperial units where the REC 20 catalog carries an imperial alternative. Power stays in kW because REC 20 has no imperial/US power unit. Baseline imperial round-trip.",
+  "equipment": [
+    {
+      "name": "Device-1",
+      "type": "equipment",
+      "status": "active",
+      "position": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "position_unit": "ft",
+      "temperature": 22.0,
+      "temperature_unit": "°F",
+      "speed": 25,
+      "speed_unit": "ft/s",
+      "weight": 1500,
+      "weight_unit": "lb",
+      "power": 5000,
+      "power_unit": "kW",
+      "pressure": 101325,
+      "pressure_unit": "lbf/in²"
+    }
+  ]
+}

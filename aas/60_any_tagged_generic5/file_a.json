@@ -1,0 +1,63 @@
+{
+  "assetAdministrationShells": [
+    {
+      "id": "urn:test:60_any_tagged_generic5",
+      "idShort": "X60_any_tagged_generic5",
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:test:60_any_tagged_generic5:submodel"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "urn:test:60_any_tagged_generic5"
+      }
+    }
+  ],
+  "submodels": [
+    {
+      "id": "urn:test:60_any_tagged_generic5:submodel",
+      "idShort": "Assets",
+      "submodelElements": [
+        {
+          "idShort": "Device-1",
+          "modelType": "SubmodelElementCollection",
+          "value": [
+            {
+              "idShort": "field1",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "alpha"
+            },
+            {
+              "idShort": "field2",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "12.0"
+            },
+            {
+              "idShort": "field3",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "beta"
+            },
+            {
+              "idShort": "field4",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "99.0"
+            }
+          ]
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "dispatch": "DeliveryFleet-NYC",
+  "units": [
+    {
+      "vehicle_id": "Van-101",
+      "vehicle_type": "delivery_van",
+      "gps": [
+        40.7128,
+        -74.006,
+        0.0
+      ],
+      "assignment": "en_route",
+      "kmh": 45.0
+    },
+    {
+      "vehicle_id": "Van-102",
+      "vehicle_type": "delivery_van",
+      "gps": [
+        40.758,
+        -73.985,
+        0.0
+      ],
+      "assignment": "delivering",
+      "kmh": 0.0
+    },
+    {
+      "vehicle_id": "Truck-201",
+      "vehicle_type": "refrigerated_truck",
+      "gps": [
+        40.6892,
+        -74.044,
+        0.0
+      ],
+      "assignment": "loading",
+      "kmh": 0.0
+    }
+  ]
+}

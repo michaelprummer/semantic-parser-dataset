@@ -1,0 +1,27 @@
+{
+  "scene_name": "10_units_alias_lookup",
+  "description": "Data uses alias forms (metre, DEG_C, metrePerSecond-Time, kilogram, watt, pascal). expected_units asserts the canonical REC 20 symbols. Tests whether the parser normalizes aliases to canonical units or preserves them verbatim.",
+  "equipment": [
+    {
+      "name": "Device-1",
+      "type": "equipment",
+      "status": "active",
+      "position": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "position_unit": "metre",
+      "temperature": 22.0,
+      "temperature_unit": "DEG_C",
+      "speed": 25,
+      "speed_unit": "metrePerSecond-Time",
+      "weight": 1500,
+      "weight_unit": "kilogram",
+      "power": 5000,
+      "power_unit": "watt",
+      "pressure": 101325,
+      "pressure_unit": "pascal"
+    }
+  ]
+}

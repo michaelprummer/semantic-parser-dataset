@@ -1,0 +1,81 @@
+{
+  "assetAdministrationShells": [
+    {
+      "id": "urn:test:25_textile",
+      "idShort": "X25_textile",
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:test:25_textile:submodel"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "urn:test:25_textile"
+      }
+    }
+  ],
+  "submodels": [
+    {
+      "id": "urn:test:25_textile:submodel",
+      "idShort": "Assets",
+      "submodelElements": [
+        {
+          "idShort": "Device-1",
+          "modelType": "SubmodelElementCollection",
+          "value": [
+            {
+              "idShort": "Type",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "equipment"
+            },
+            {
+              "idShort": "Position",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                {
+                  "idShort": "x",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "1.0"
+                },
+                {
+                  "idShort": "y",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "2.0"
+                },
+                {
+                  "idShort": "z",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "3.0"
+                }
+              ]
+            },
+            {
+              "idShort": "Status",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "active"
+            },
+            {
+              "idShort": "Speed",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "2.5"
+            }
+          ]
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "$anchor": "a1000001-0000-0000-0000-000000000001",
+  "$name": "21_marine",
+  "$concept": "asset",
+  "$abstraction": "instance",
+  "assets": {
+    "Device-1": {
+      "$anchor": "a1000001-0000-0000-0000-0000000000000021",
+      "$name": "Device-1",
+      "$concept": "asset",
+      "$abstraction": "instance",
+      "EquipmentType": {
+        "$anchor": "a10000021-0000-0000-0000-000000000002",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "equipment"
+      },
+      "Position": {
+        "$anchor": "a10000021-0000-0000-0000-000000000003",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "[1.0, 2.0, 3.0]"
+      },
+      "OperatingStatus": {
+        "$anchor": "a10000021-0000-0000-0000-000000000004",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "active"
+      },
+      "FlowRate": {
+        "$anchor": "a10000021-0000-0000-0000-000000000005",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 2.5,
+        "$unit": "m3/h"
+      }
+    }
+  }
+}

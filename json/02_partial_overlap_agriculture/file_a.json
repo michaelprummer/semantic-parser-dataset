@@ -1,0 +1,50 @@
+{
+  "farm": "GreenField-Organic",
+  "equipment": [
+    {
+      "name": "Tractor-JD8R",
+      "type": "tractor",
+      "position": [
+        500.0,
+        300.0,
+        0.0
+      ],
+      "status": "plowing",
+      "speed": 8.0,
+      "weight": 12500,
+      "power": 250000,
+      "temperature": 90.0,
+      "frequency": 2200
+    },
+    {
+      "name": "Sprayer-S1",
+      "type": "crop_sprayer",
+      "position": [
+        600.0,
+        250.0,
+        0.0
+      ],
+      "status": "idle",
+      "speed": 0.0,
+      "weight": 5000,
+      "power": 0,
+      "temperature": 25.0,
+      "frequency": 0
+    },
+    {
+      "name": "Harvester-H1",
+      "type": "combine_harvester",
+      "position": [
+        400.0,
+        400.0,
+        0.0
+      ],
+      "status": "harvesting",
+      "speed": 5.0,
+      "weight": 20000,
+      "power": 350000,
+      "temperature": 85.0,
+      "frequency": 1800
+    }
+  ]
+}

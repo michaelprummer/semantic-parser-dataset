@@ -1,0 +1,38 @@
+{
+  "line": "PackagingLine-3",
+  "stations": [
+    {
+      "name": "Filler-F1",
+      "type": "liquid_filler",
+      "position": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "status": "running",
+      "speed": 120
+    },
+    {
+      "name": "Capper-C1",
+      "type": "cap_sealer",
+      "position": [
+        2.0,
+        0.0,
+        1.0
+      ],
+      "status": "running",
+      "speed": 120
+    },
+    {
+      "name": "Labeler-L1",
+      "type": "label_applicator",
+      "position": [
+        4.0,
+        0.0,
+        1.0
+      ],
+      "status": "running",
+      "speed": 120
+    }
+  ]
+}

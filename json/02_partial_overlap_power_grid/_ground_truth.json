@@ -1,0 +1,41 @@
+{
+  "scenario": "partial_overlap",
+  "description": "Power grid substation. A has 7 properties per asset, B has only 2 (name, type, position). Major data loss A\u2192B.",
+  "shared_semids": [
+    "POS",
+    "TYPE"
+  ],
+  "a_only_semids": [
+    "STATE",
+    "POWER",
+    "THERM",
+    "WEIGHT",
+    "FREQ",
+    "VEL"
+  ],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "TYPE": true,
+    "STATE": false,
+    "POWER": false,
+    "THERM": false,
+    "WEIGHT": false,
+    "FREQ": false,
+    "VEL": false
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "TYPE": true
+  },
+  "a_to_b_expected_losses": [
+    "STATE",
+    "POWER",
+    "THERM",
+    "WEIGHT",
+    "FREQ",
+    "VEL"
+  ],
+  "b_to_a_expected_losses": [],
+  "notes": "B is extremely minimal (id, category, location only). A\u2192B loses most properties."
+}

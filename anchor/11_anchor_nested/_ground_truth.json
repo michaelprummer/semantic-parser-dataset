@@ -1,0 +1,49 @@
+{
+  "scenario": "anchor_nested",
+  "description": "Anchor format with nested child assets (sub-equipment inside vessels) vs. nested JSON with sub_equipment arrays. Tests deep asset hierarchy mapping between Anchor's $concept-based nesting and JSON array nesting.",
+  "file_a_expected_semids": [
+    "POS",
+    "TYPE",
+    "STATE",
+    "THERM",
+    "PRESS",
+    "VEL"
+  ],
+  "file_b_expected_semids": [
+    "POS",
+    "TYPE",
+    "STATE",
+    "THERM",
+    "PRESS",
+    "VEL"
+  ],
+  "shared_semids": [
+    "POS",
+    "TYPE",
+    "STATE",
+    "THERM",
+    "PRESS",
+    "VEL"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "TYPE": true,
+    "STATE": true,
+    "THERM": true,
+    "PRESS": true,
+    "VEL": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "TYPE": true,
+    "STATE": true,
+    "THERM": true,
+    "PRESS": true,
+    "VEL": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "notes": "Nested hierarchy: Reactor contains Agitator and TempSensor. HeatExchanger contains CoolantPump. Anchor uses nested 'assets' dicts, JSON uses 'sub_equipment' arrays. Pressure maps to PRESS, speed/flow to VEL."
+}

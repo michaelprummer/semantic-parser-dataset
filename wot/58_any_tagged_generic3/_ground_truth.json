@@ -1,0 +1,14 @@
+{
+  "scenario": "58_any_tagged_generic3",
+  "description": "Any-tagged partial: two real semantic fields (temperature -> THERM, speed -> VEL) alongside one generic ANY field. Both semantic fields must survive; the generic field is an expected loss.",
+  "file_a_expected_semids": ["THERM", "VEL"],
+  "file_b_expected_semids": ["THERM", "VEL"],
+  "shared_semids": ["THERM", "VEL"],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {"THERM": true, "VEL": true},
+  "b_to_a_expected_survivors": {"THERM": true, "VEL": true},
+  "a_to_b_expected_losses": ["field1"],
+  "b_to_a_expected_losses": ["fld1"],
+  "notes": "temperature (THERM) and speed (VEL) survive; generic field1/fld1 is dropped."
+}

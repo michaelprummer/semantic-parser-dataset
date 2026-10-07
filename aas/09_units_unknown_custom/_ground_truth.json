@@ -1,0 +1,88 @@
+{
+  "scenario": "units",
+  "test_case": "unknown_custom",
+  "description": "One property carries a non-catalog unit (ppm). Parser must preserve the unit string even when infer_sem_id_from_unit() returns None for it. The non-catalog unit is the same in both files.",
+  "shared_semids": [
+    "NAME",
+    "POS",
+    "POWER",
+    "PRESS",
+    "RATIO",
+    "STATE",
+    "THERM",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "file_a_expected_semids": [
+    "NAME",
+    "POS",
+    "POWER",
+    "PRESS",
+    "RATIO",
+    "STATE",
+    "THERM",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "file_b_expected_semids": [
+    "NAME",
+    "POS",
+    "POWER",
+    "PRESS",
+    "RATIO",
+    "STATE",
+    "THERM",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "POWER": true,
+    "PRESS": true,
+    "RATIO": true,
+    "STATE": true,
+    "THERM": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true,
+    "NAME": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "POWER": true,
+    "PRESS": true,
+    "RATIO": true,
+    "STATE": true,
+    "THERM": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true,
+    "NAME": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "a_to_b_expected_units": {
+    "POS": "m",
+    "THERM": "\u00b0C",
+    "VEL": "m/s",
+    "WEIGHT": "kg",
+    "POWER": "W",
+    "PRESS": "Pa",
+    "RATIO": "ppm"
+  },
+  "b_to_a_expected_units": {
+    "POS": "m",
+    "THERM": "\u00b0C",
+    "VEL": "m/s",
+    "WEIGHT": "kg",
+    "POWER": "W",
+    "PRESS": "Pa",
+    "RATIO": "ppm"
+  },
+  "notes": "units test case: 09_units_unknown_custom"
+}

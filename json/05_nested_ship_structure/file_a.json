@@ -1,0 +1,89 @@
+{
+  "vessel_id": "CargoVessel-MV-Atlantic",
+  "ship": {
+    "name": "MV-Atlantic",
+    "type": "bulk_carrier",
+    "status": "at_sea",
+    "weight": 45000000,
+    "speed": 14.0,
+    "decks": [
+      {
+        "name": "Main-Deck",
+        "type": "weather_deck",
+        "position": [
+          0.0,
+          0.0,
+          15.0
+        ],
+        "compartments": [
+          {
+            "name": "Hold-1",
+            "type": "cargo_hold",
+            "position": [
+              20.0,
+              0.0,
+              5.0
+            ],
+            "weight": 12000000,
+            "temperature": 25.0
+          },
+          {
+            "name": "Hold-2",
+            "type": "cargo_hold",
+            "position": [
+              50.0,
+              0.0,
+              5.0
+            ],
+            "weight": 15000000,
+            "temperature": 24.0
+          },
+          {
+            "name": "Hold-3",
+            "type": "cargo_hold",
+            "position": [
+              80.0,
+              0.0,
+              5.0
+            ],
+            "weight": 10000000,
+            "temperature": 26.0
+          }
+        ]
+      },
+      {
+        "name": "Engine-Deck",
+        "type": "machinery_space",
+        "position": [
+          0.0,
+          0.0,
+          3.0
+        ],
+        "compartments": [
+          {
+            "name": "Engine-Room",
+            "type": "propulsion",
+            "position": [
+              100.0,
+              0.0,
+              3.0
+            ],
+            "power": 12000000,
+            "temperature": 45.0
+          },
+          {
+            "name": "Generator-Room",
+            "type": "electrical",
+            "position": [
+              95.0,
+              0.0,
+              3.0
+            ],
+            "power": 3000000,
+            "temperature": 38.0
+          }
+        ]
+      }
+    ]
+  }
+}

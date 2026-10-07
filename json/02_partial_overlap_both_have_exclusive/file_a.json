@@ -1,0 +1,29 @@
+{
+  "facility": "Refinery-Unit-5",
+  "vessels": [
+    {
+      "name": "Column-C1",
+      "type": "distillation_column",
+      "position": [
+        10.0,
+        0.0,
+        20.0
+      ],
+      "status": "operating",
+      "temperature": 350.0,
+      "weight": 45000
+    },
+    {
+      "name": "Drum-D1",
+      "type": "reflux_drum",
+      "position": [
+        12.0,
+        0.0,
+        5.0
+      ],
+      "status": "level_ok",
+      "temperature": 120.0,
+      "weight": 8000
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$anchor": "b1000001-0000-0000-0000-000000000056",
+  "$name": "56_any_tagged_generic1_b",
+  "$concept": "asset",
+  "$abstraction": "instance",
+  "assets": {
+    "Device-1": {
+      "$anchor": "b1000056-0000-0000-0000-000000000001",
+      "$name": "Device-1",
+      "$concept": "asset",
+      "$abstraction": "instance",
+      "fld1": {
+        "$anchor": "b1000056-0000-0000-0000-000000000002",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "data"
+      },
+      "fld2": {
+        "$anchor": "b1000056-0000-0000-0000-000000000003",
+        "$concept": "attribute",
+        "$datatype": "double",
+        "$value": "1.0"
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "cabinet": "DataCenter-Rack-42",
+  "hardware": [
+    {
+      "hostname": "Switch-Core-1",
+      "hw_type": "network_switch",
+      "slot": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "health": "active",
+      "heat": 42.0,
+      "draw_watts": 350
+    },
+    {
+      "hostname": "Router-Edge-1",
+      "hw_type": "router",
+      "slot": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "health": "active",
+      "heat": 38.0,
+      "draw_watts": 180
+    },
+    {
+      "hostname": "UPS-Backup",
+      "hw_type": "ups",
+      "slot": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "health": "standby",
+      "heat": 28.0,
+      "draw_watts": 3000
+    }
+  ]
+}

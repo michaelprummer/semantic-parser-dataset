@@ -1,0 +1,30 @@
+{
+  "scenario": "full_overlap",
+  "description": "Data center rack with network equipment. Tests IT/telecom domain vocabulary.",
+  "shared_semids": [
+    "POS",
+    "STATE",
+    "TYPE",
+    "THERM",
+    "POWER"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "THERM": true,
+    "POWER": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "THERM": true,
+    "POWER": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "notes": "Key diffs: name/hostname, type/hw_type, position/slot, status/health, temperature/heat, power/draw_watts"
+}

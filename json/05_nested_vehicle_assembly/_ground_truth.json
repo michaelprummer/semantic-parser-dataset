@@ -1,0 +1,37 @@
+{
+  "scenario": "nested_hierarchy",
+  "description": "Electric vehicle assembly. Vehicle \u2192 systems \u2192 components.",
+  "shared_semids": [
+    "POS",
+    "STATE",
+    "TYPE",
+    "WEIGHT",
+    "POWER",
+    "VEL"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "WEIGHT": true,
+    "POWER": true,
+    "VEL": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "WEIGHT": true,
+    "POWER": true,
+    "VEL": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "expected_asset_count": {
+    "file_a": 8,
+    "file_b": 8
+  },
+  "notes": "3-level hierarchy with mixed properties at each level."
+}

@@ -1,0 +1,53 @@
+{
+  "system": "WaterTreatment-Central",
+  "units": [
+    {
+      "unit_name": "Pump-Intake-1",
+      "unit_type": "submersible_pump",
+      "loc": [
+        0.0,
+        0.0,
+        -5.0
+      ],
+      "run_state": "running",
+      "rpm": 1750,
+      "wattage": 22000
+    },
+    {
+      "unit_name": "Filter-Sand-1",
+      "unit_type": "rapid_sand_filter",
+      "loc": [
+        10.0,
+        0.0,
+        0.0
+      ],
+      "run_state": "filtering",
+      "rpm": 0,
+      "wattage": 500
+    },
+    {
+      "unit_name": "UV-Disinfect-1",
+      "unit_type": "uv_reactor",
+      "loc": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "run_state": "active",
+      "rpm": 0,
+      "wattage": 8000
+    },
+    {
+      "unit_name": "Pump-Distribution",
+      "unit_type": "booster_pump",
+      "loc": [
+        30.0,
+        0.0,
+        0.0
+      ],
+      "run_state": "running",
+      "rpm": 2900,
+      "wattage": 45000
+    }
+  ]
+}

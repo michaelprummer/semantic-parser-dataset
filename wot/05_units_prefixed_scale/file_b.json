@@ -1,0 +1,62 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
+  ],
+  "@type": "Thing",
+  "title": "05_units_prefixed_scale",
+  "id": "urn:test:thing:05_units_prefixed_scale_b",
+  "securityDefinitions": {
+    "nosec_sc": {
+      "scheme": "nosec"
+    }
+  },
+  "security": "nosec_sc",
+  "properties": {
+    "position": {
+      "title": "Position",
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "unit": "mm",
+      "value": [
+        1.0,
+        2.0,
+        3.0
+      ]
+    },
+    "temperature": {
+      "title": "Temperature",
+      "type": "number",
+      "unit": "°C",
+      "value": 22.0
+    },
+    "speed": {
+      "title": "Speed",
+      "type": "number",
+      "unit": "km/h",
+      "value": 25
+    },
+    "weight": {
+      "title": "Weight",
+      "type": "number",
+      "unit": "kg",
+      "value": 1500
+    },
+    "power": {
+      "title": "Power",
+      "type": "number",
+      "unit": "kW",
+      "value": 5000
+    },
+    "pressure": {
+      "title": "Pressure",
+      "type": "number",
+      "unit": "MPa",
+      "value": 101325
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "scada_system": "SCADA-Plant-North",
+  "alarm_points": [
+    {
+      "tag": "AI-3001",
+      "alarm_priority": 2,
+      "alarm_class": "process_high",
+      "deadband": 0.5,
+      "scan_rate_ms": 500,
+      "engineering_units": "bar"
+    },
+    {
+      "tag": "DI-4002",
+      "alarm_priority": 1,
+      "alarm_class": "safety_trip",
+      "deadband": 0,
+      "scan_rate_ms": 100,
+      "engineering_units": "bool"
+    },
+    {
+      "tag": "AO-5001",
+      "alarm_priority": 3,
+      "alarm_class": "deviation",
+      "deadband": 1.0,
+      "scan_rate_ms": 1000,
+      "engineering_units": "percent"
+    }
+  ]
+}

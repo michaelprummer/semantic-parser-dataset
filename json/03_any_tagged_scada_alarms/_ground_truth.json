@@ -1,0 +1,12 @@
+{
+  "scenario": "any_tagged",
+  "description": "SCADA alarm configuration. Domain-specific fields: priority, alarm class, deadband, scan rate, engineering units.",
+  "shared_semids": [],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {},
+  "b_to_a_expected_survivors": {},
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "notes": "Industrial SCADA domain. All properties are arbitrary control system metadata with no standard SemId."
+}

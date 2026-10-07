@@ -1,0 +1,60 @@
+{
+  "scene_name": "Machining-Cell-3",
+  "elements": [
+    {
+      "name": "Cell-3",
+      "type": "machining_cell",
+      "status": "producing"
+    },
+    {
+      "name": "CNC-Lathe-1",
+      "type": "cnc_lathe",
+      "position": [
+        2.0,
+        0.0,
+        0.0
+      ],
+      "status": "cutting",
+      "speed": 2500,
+      "power": 15000,
+      "parent": "Cell-3"
+    },
+    {
+      "name": "Carbide-Insert-T1",
+      "type": "cutting_tool",
+      "position": [
+        2.0,
+        0.0,
+        0.5
+      ],
+      "speed": 2500,
+      "temperature": 350.0,
+      "parent": "CNC-Lathe-1"
+    },
+    {
+      "name": "Grinder-G1",
+      "type": "surface_grinder",
+      "position": [
+        5.0,
+        0.0,
+        0.0
+      ],
+      "status": "dressing",
+      "speed": 1800,
+      "power": 7500,
+      "parent": "Cell-3"
+    },
+    {
+      "name": "Diamond-Wheel",
+      "type": "grinding_wheel",
+      "position": [
+        5.0,
+        0.0,
+        0.5
+      ],
+      "speed": 1800,
+      "temperature": 180.0,
+      "parent": "Grinder-G1"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "assetAdministrationShells": [
+    {
+      "id": "urn:factory:aas:WeldingCell001",
+      "idShort": "WeldingCell",
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "urn:factory:submodel:Equipment"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "urn:factory:aas:WeldingCell001"
+      }
+    }
+  ],
+  "submodels": [
+    {
+      "id": "urn:factory:submodel:Equipment",
+      "idShort": "Equipment",
+      "submodelElements": [
+        {
+          "idShort": "WeldBot-Alpha",
+          "modelType": "SubmodelElementCollection",
+          "value": [
+            {
+              "idShort": "Position",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                {
+                  "idShort": "x",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "2.5"
+                },
+                {
+                  "idShort": "y",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "1.0"
+                },
+                {
+                  "idShort": "z",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "0.0"
+                }
+              ]
+            },
+            {
+              "idShort": "Type",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "welding_robot"
+            },
+            {
+              "idShort": "Status",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "active"
+            },
+            {
+              "idShort": "Speed",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "3.2"
+            }
+          ]
+        },
+        {
+          "idShort": "Conveyor-1",
+          "modelType": "SubmodelElementCollection",
+          "value": [
+            {
+              "idShort": "Position",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                {
+                  "idShort": "x",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "0.0"
+                },
+                {
+                  "idShort": "y",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "0.0"
+                },
+                {
+                  "idShort": "z",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "0.0"
+                }
+              ]
+            },
+            {
+              "idShort": "Type",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "conveyor"
+            },
+            {
+              "idShort": "Status",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "active"
+            },
+            {
+              "idShort": "Speed",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "1.5"
+            }
+          ]
+        },
+        {
+          "idShort": "Inspection-Cam",
+          "modelType": "SubmodelElementCollection",
+          "value": [
+            {
+              "idShort": "Position",
+              "modelType": "SubmodelElementCollection",
+              "value": [
+                {
+                  "idShort": "x",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "4.0"
+                },
+                {
+                  "idShort": "y",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "2.0"
+                },
+                {
+                  "idShort": "z",
+                  "modelType": "Property",
+                  "valueType": "xs:double",
+                  "value": "3.5"
+                }
+              ]
+            },
+            {
+              "idShort": "Type",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "camera"
+            },
+            {
+              "idShort": "Status",
+              "modelType": "Property",
+              "valueType": "xs:string",
+              "value": "idle"
+            },
+            {
+              "idShort": "Speed",
+              "modelType": "Property",
+              "valueType": "xs:double",
+              "value": "0.0"
+            }
+          ]
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "$anchor": "c3000001-0000-0000-0000-000000000001",
+  "$name": "PowerDistribution.Switchgear",
+  "$concept": "asset",
+  "$abstraction": "instance",
+  "$metadata": {
+    "anchor": {
+      "createdOn": "2025-06-03T14:00:00Z",
+      "tenant": "000000000",
+      "tenantName": "ElecOps"
+    }
+  },
+  "assets": {
+    "Breaker-CB1": {
+      "$anchor": "c3000001-0000-0000-0000-000000000010",
+      "$name": "Breaker-CB1",
+      "$concept": "asset",
+      "$abstraction": "instance",
+      "Position": {
+        "$anchor": "c3000001-0000-0000-0000-000000000011",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "[1.0, 0.0, 2.0]"
+      },
+      "EquipmentType": {
+        "$anchor": "c3000001-0000-0000-0000-000000000012",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "circuit_breaker"
+      },
+      "OperatingStatus": {
+        "$anchor": "c3000001-0000-0000-0000-000000000013",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "closed"
+      },
+      "RatedCurrent": {
+        "$anchor": "c3000001-0000-0000-0000-000000000014",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 630.0,
+        "$unit": "A"
+      },
+      "RatedVoltage": {
+        "$anchor": "c3000001-0000-0000-0000-000000000015",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 400.0,
+        "$unit": "V"
+      },
+      "TripCount": {
+        "$anchor": "c3000001-0000-0000-0000-000000000016",
+        "$concept": "attribute",
+        "$datatype": "int32",
+        "$value": 3
+      }
+    },
+    "Transformer-TX1": {
+      "$anchor": "c3000001-0000-0000-0000-000000000020",
+      "$name": "Transformer-TX1",
+      "$concept": "asset",
+      "$abstraction": "instance",
+      "Position": {
+        "$anchor": "c3000001-0000-0000-0000-000000000021",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "[3.0, 0.0, 0.0]"
+      },
+      "EquipmentType": {
+        "$anchor": "c3000001-0000-0000-0000-000000000022",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "power_transformer"
+      },
+      "OperatingStatus": {
+        "$anchor": "c3000001-0000-0000-0000-000000000023",
+        "$concept": "attribute",
+        "$datatype": "string",
+        "$value": "energized"
+      },
+      "RatedCurrent": {
+        "$anchor": "c3000001-0000-0000-0000-000000000024",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 1250.0,
+        "$unit": "A"
+      },
+      "RatedVoltage": {
+        "$anchor": "c3000001-0000-0000-0000-000000000025",
+        "$concept": "attribute",
+        "$datatype": "float64",
+        "$value": 10000.0,
+        "$unit": "V"
+      },
+      "TripCount": {
+        "$anchor": "c3000001-0000-0000-0000-000000000026",
+        "$concept": "attribute",
+        "$datatype": "int32",
+        "$value": 0
+      }
+    }
+  }
+}

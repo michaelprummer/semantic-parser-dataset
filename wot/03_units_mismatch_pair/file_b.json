@@ -1,0 +1,62 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
+  ],
+  "@type": "Thing",
+  "title": "03_units_mismatch_pair",
+  "id": "urn:test:thing:03_units_mismatch_pair_b",
+  "securityDefinitions": {
+    "nosec_sc": {
+      "scheme": "nosec"
+    }
+  },
+  "security": "nosec_sc",
+  "properties": {
+    "position": {
+      "title": "Position",
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "unit": "ft",
+      "value": [
+        3.2808,
+        6.5617,
+        9.8425
+      ]
+    },
+    "temperature": {
+      "title": "Temperature",
+      "type": "number",
+      "unit": "°F",
+      "value": 71.6
+    },
+    "speed": {
+      "title": "Speed",
+      "type": "number",
+      "unit": "ft/s",
+      "value": 82.021
+    },
+    "weight": {
+      "title": "Weight",
+      "type": "number",
+      "unit": "lb",
+      "value": 3306.93
+    },
+    "power": {
+      "title": "Power",
+      "type": "number",
+      "unit": "kW",
+      "value": 5.0
+    },
+    "pressure": {
+      "title": "Pressure",
+      "type": "number",
+      "unit": "lbf/in²",
+      "value": 14.696
+    }
+  }
+}

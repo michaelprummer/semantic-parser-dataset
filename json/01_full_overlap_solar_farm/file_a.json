@@ -1,0 +1,41 @@
+{
+  "plant_id": "SolarFarm-West",
+  "panels": [
+    {
+      "name": "Panel-A1",
+      "type": "monocrystalline",
+      "position": [
+        10.0,
+        0.0,
+        5.0
+      ],
+      "status": "generating",
+      "power": 320.5,
+      "temperature": 45.2
+    },
+    {
+      "name": "Panel-A2",
+      "type": "monocrystalline",
+      "position": [
+        12.0,
+        0.0,
+        5.0
+      ],
+      "status": "generating",
+      "power": 318.0,
+      "temperature": 44.8
+    },
+    {
+      "name": "Inverter-1",
+      "type": "string_inverter",
+      "position": [
+        11.0,
+        2.0,
+        0.0
+      ],
+      "status": "active",
+      "power": 638.5,
+      "temperature": 52.0
+    }
+  ]
+}

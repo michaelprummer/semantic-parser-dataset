@@ -1,0 +1,30 @@
+{
+  "scenario": "full_overlap",
+  "description": "Warehouse with 4 assets. Tests with more assets and different key vocabulary (tag/kind/mass vs name/type/weight).",
+  "shared_semids": [
+    "POS",
+    "STATE",
+    "TYPE",
+    "VEL",
+    "WEIGHT"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "notes": "Key diffs: name/tag, type/kind, position/location, status/mode, speed/velocity, weight/mass. 4 assets."
+}

@@ -1,0 +1,40 @@
+{
+  "scenario": "nested_hierarchy",
+  "description": "Cargo vessel \u2192 decks \u2192 compartments. Wide tree with large values.",
+  "shared_semids": [
+    "POS",
+    "STATE",
+    "TYPE",
+    "VEL",
+    "WEIGHT",
+    "POWER",
+    "THERM"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true,
+    "POWER": true,
+    "THERM": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "VEL": true,
+    "WEIGHT": true,
+    "POWER": true,
+    "THERM": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "expected_asset_count": {
+    "file_a": 8,
+    "file_b": 8
+  },
+  "notes": "Large numeric values (millions for weight). 2 decks, 5 compartments."
+}

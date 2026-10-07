@@ -1,0 +1,44 @@
+{
+  "scenario": "anchor_basic",
+  "description": "Anchor format with $anchor/$concept/$datatype attribute objects vs. flat JSON. Tests whether the Anchor parser correctly extracts position, type, status, flow, and temperature from the Anchor attribute hierarchy and maps them across formats.",
+  "file_a_expected_semids": [
+    "POS",
+    "TYPE",
+    "STATE",
+    "VEL",
+    "THERM"
+  ],
+  "file_b_expected_semids": [
+    "POS",
+    "TYPE",
+    "STATE",
+    "VEL",
+    "THERM"
+  ],
+  "shared_semids": [
+    "POS",
+    "TYPE",
+    "STATE",
+    "VEL",
+    "THERM"
+  ],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "TYPE": true,
+    "STATE": true,
+    "VEL": true,
+    "THERM": true
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "TYPE": true,
+    "STATE": true,
+    "VEL": true,
+    "THERM": true
+  },
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "notes": "Full overlap between Anchor and simple JSON. FlowRate maps to VEL (velocity/flow), Temperature maps to THERM. The Anchor side uses nested attribute objects with $concept, $datatype, $value, $unit fields."
+}

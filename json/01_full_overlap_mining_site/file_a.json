@@ -1,0 +1,41 @@
+{
+  "mine": "OpenPit-Copper-KZ",
+  "machines": [
+    {
+      "name": "Excavator-EX350",
+      "type": "hydraulic_excavator",
+      "position": [
+        200.0,
+        150.0,
+        -30.0
+      ],
+      "status": "digging",
+      "speed": 0.0,
+      "weight": 35000
+    },
+    {
+      "name": "Haul-Truck-01",
+      "type": "mining_truck",
+      "position": [
+        210.0,
+        155.0,
+        -28.0
+      ],
+      "status": "loading",
+      "speed": 0.0,
+      "weight": 120000
+    },
+    {
+      "name": "Drill-D100",
+      "type": "rotary_drill",
+      "position": [
+        180.0,
+        140.0,
+        -25.0
+      ],
+      "status": "drilling",
+      "speed": 120,
+      "weight": 15000
+    }
+  ]
+}

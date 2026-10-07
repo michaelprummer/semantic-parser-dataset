@@ -1,0 +1,40 @@
+{
+  "scenario": "partial_overlap",
+  "description": "Refinery \u2014 BOTH sides have exclusive properties. A has temp/weight, B has power/flow. Both lose data in conversion.",
+  "shared_semids": [
+    "POS",
+    "STATE",
+    "TYPE"
+  ],
+  "a_only_semids": [
+    "THERM",
+    "WEIGHT"
+  ],
+  "b_only_semids": [
+    "POWER",
+    "FREQ"
+  ],
+  "a_to_b_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "THERM": false,
+    "WEIGHT": false
+  },
+  "b_to_a_expected_survivors": {
+    "POS": true,
+    "STATE": true,
+    "TYPE": true,
+    "POWER": false,
+    "FREQ": false
+  },
+  "a_to_b_expected_losses": [
+    "THERM",
+    "WEIGHT"
+  ],
+  "b_to_a_expected_losses": [
+    "POWER",
+    "FREQ"
+  ],
+  "notes": "Both directions lose data. A has temp/weight exclusively, B has power/flow_rate exclusively."
+}

@@ -1,0 +1,23 @@
+{
+  "inventory_list": "AssemblyPlant-9",
+  "items": [
+    {
+      "item_name": "CNC-Mill-01",
+      "item_type": "cnc_mill",
+      "weight_kg": 4500,
+      "status": "machining"
+    },
+    {
+      "item_name": "Lathe-L3",
+      "item_type": "cnc_lathe",
+      "weight_kg": 3200,
+      "status": "idle"
+    },
+    {
+      "item_name": "Robot-Weld-5",
+      "item_type": "welding_robot",
+      "weight_kg": 1200,
+      "status": "welding"
+    }
+  ]
+}

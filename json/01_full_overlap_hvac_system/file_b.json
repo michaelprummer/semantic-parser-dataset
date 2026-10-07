@@ -1,0 +1,44 @@
+{
+  "system_name": "OfficeComplex-B7",
+  "components": [
+    {
+      "identifier": "AHU-1",
+      "component_type": "air_handler",
+      "coordinates": [
+        0.0,
+        0.0,
+        12.0
+      ],
+      "operating_state": "cooling",
+      "temp": 18.5,
+      "energy": 15000,
+      "rpm": 1200
+    },
+    {
+      "identifier": "Chiller-1",
+      "component_type": "chiller",
+      "coordinates": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "operating_state": "running",
+      "temp": 7.0,
+      "energy": 85000,
+      "rpm": 0
+    },
+    {
+      "identifier": "VAV-201",
+      "component_type": "vav_box",
+      "coordinates": [
+        5.0,
+        10.0,
+        3.0
+      ],
+      "operating_state": "modulating",
+      "temp": 22.0,
+      "energy": 200,
+      "rpm": 800
+    }
+  ]
+}

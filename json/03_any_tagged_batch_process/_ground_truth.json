@@ -1,0 +1,12 @@
+{
+  "scenario": "any_tagged",
+  "description": "Batch process control. All properties are domain-specific (recipe codes, batch steps, setpoints, lot numbers).",
+  "shared_semids": [],
+  "a_only_semids": [],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {},
+  "b_to_a_expected_survivors": {},
+  "a_to_b_expected_losses": [],
+  "b_to_a_expected_losses": [],
+  "notes": "All fields are custom/domain-specific with no standard SemId mapping. Tests opaque property pass-through."
+}

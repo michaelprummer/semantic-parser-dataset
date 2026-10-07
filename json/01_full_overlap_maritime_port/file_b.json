@@ -1,0 +1,41 @@
+{
+  "terminal_id": "ContainerTerminal-Alpha",
+  "assets": [
+    {
+      "asset_name": "CargoShip-Meridian",
+      "asset_type": "container_ship",
+      "geo_pos": [
+        100.0,
+        50.0,
+        0.0
+      ],
+      "condition": "docked",
+      "velocity": 0.0,
+      "tonnage": 180000
+    },
+    {
+      "asset_name": "Tugboat-T3",
+      "asset_type": "tugboat",
+      "geo_pos": [
+        95.0,
+        48.0,
+        0.0
+      ],
+      "condition": "standby",
+      "velocity": 0.0,
+      "tonnage": 500
+    },
+    {
+      "asset_name": "Crane-Gantry-1",
+      "asset_type": "gantry_crane",
+      "geo_pos": [
+        100.0,
+        45.0,
+        0.0
+      ],
+      "condition": "loading",
+      "velocity": 0.5,
+      "tonnage": 2000
+    }
+  ]
+}

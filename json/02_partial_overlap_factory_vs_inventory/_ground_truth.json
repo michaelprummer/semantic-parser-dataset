@@ -1,0 +1,38 @@
+{
+  "scenario": "partial_overlap",
+  "description": "Factory operational view (A) vs inventory tracking view (B). B only tracks name, type, weight, status.",
+  "shared_semids": [
+    "STATE",
+    "TYPE",
+    "WEIGHT"
+  ],
+  "a_only_semids": [
+    "POS",
+    "VEL",
+    "THERM",
+    "POWER"
+  ],
+  "b_only_semids": [],
+  "a_to_b_expected_survivors": {
+    "STATE": true,
+    "TYPE": true,
+    "WEIGHT": true,
+    "POS": false,
+    "VEL": false,
+    "THERM": false,
+    "POWER": false
+  },
+  "b_to_a_expected_survivors": {
+    "STATE": true,
+    "TYPE": true,
+    "WEIGHT": true
+  },
+  "a_to_b_expected_losses": [
+    "POS",
+    "VEL",
+    "THERM",
+    "POWER"
+  ],
+  "b_to_a_expected_losses": [],
+  "notes": "A is operational (position, speed, temp, power). B is inventory (weight, status only). Different overlap pattern than original."
+}
